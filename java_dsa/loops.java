@@ -191,6 +191,7 @@ public class loops {
         // **    **
         // *      *
 
+        // M - 1-------------------------------------------
         // upper half
         // for (int i = 1; i <= x; i++) {
         //     // first part
@@ -241,6 +242,38 @@ public class loops {
         //     // spaces
         //     System.out.println();
         // }
+
+
+
+        // M - 2-------------------------------------------
+        // upper half.
+        // for(int i = 0; i < x; i++) {
+        //     for(int j = 0; j <= i; j++) {
+        //         System.out.print("*");
+        //     }
+        //     for(int j = 0; j < 2*(x - i - 1); j++) {
+        //         System.out.print(" ");
+        //     }
+        //     for(int j = 0; j <= i; j++) {
+        //         System.out.print("*");
+        //     }
+        //     System.out.println();
+        // }
+
+        // // second half.
+        // for(int i = x; i >= 1; i--) {
+        //     for(int j = 1; j <= i; j++) {
+        //         System.out.print("*");
+        //     }
+        //     for(int j = 1; j <= 2*(x - i); j++) {
+        //         System.out.print(" ");
+        //     }
+        //     for(int j = 1; j <= i; j++) {
+        //         System.out.print("*");
+        //     }
+        //     System.out.println();
+        // }
+
 
         // pattern - 11....................................................
         //     *****

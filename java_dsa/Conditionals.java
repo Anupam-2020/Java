@@ -10,13 +10,18 @@ public class Conditionals {
         System.out.println("Enter operator");
         String operator = sc.next();
 
-        switch (operator) {
+        switch(operator) {
             case "+":
                 System.out.println(val1 + val2);
                 break;
             case "-":
-                System.out.println(Math.abs(val2 - val1));
+                System.out.println(Math.abs(val1 - val2));
+                break;
+            case "*":
+                System.out.println(val1*val2);
+                break;
             default:
+                System.out.println("Invalid operator");
                 break;
         }
     }
