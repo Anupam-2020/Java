@@ -53,7 +53,9 @@ public class strings {
         name4 = name4.substring(0, 6) + "MZ" + name4.substring(6);
         System.out.println(name4);
 
+        System.out.println('a'-'a');
         System.out.println((char)122);
+        System.out.println((int)'z');
 
         System.out.println(getMaxOccuringChar("abcc"));
     }

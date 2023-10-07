@@ -1,4 +1,20 @@
+import java.lang.reflect.Array;
+
 public class BitManipulation {
+    static int binarysearch(int arr[], int n, int k) {
+        // code here
+        int start = 0;
+        int end = arr.length - 1;
+        int mid = ( start + end ) / 2;
+        while(start < end) {
+            if(arr[mid] == k) return mid;
+            else if(arr[mid] > k) end = mid - 1;
+            else start = mid + 1;
+            mid = (start + end) / 2;
+        }
+        return -1;
+    }
+
     public static void main(String[] args) {
         // Operations which come under bit manipulation..................
         // 1. get -> to get which bit is available at particular position of a number.. 
@@ -66,23 +82,23 @@ public class BitManipulation {
         // step1:- check if the operation is to convert to 0 or 1...
         // step2:- if 0 apply clear operation else set operation.
 
-        int num2 = 5;
-        int pos = 2;
-        int bitmasked = 1 << pos;
-        int operation = 0;
+        // int num2 = 5;
+        // int pos = 2;
+        // int bitmasked = 1 << pos;
+        // int operation = 0;
 
-        switch(operation) {
-            case 1: 
-                // set
-                System.out.println(bitmasked | num2);
-                break;
-            case 0:
-                // clear
-                System.out.println(num2 & ~bitmasked);
-                break;
-            default:
-                System.out.println("Invalid operation");
-        }
+        // switch(operation) {
+        //     case 1: 
+        //         // set
+        //         System.out.println(bitmasked | num2);
+        //         break;
+        //     case 0:
+        //         // clear
+        //         System.out.println(num2 & ~bitmasked);
+        //         break;
+        //     default:
+        //         System.out.println("Invalid operation");
+        // }
 
 
         // binary to decimal conversion.....................
@@ -144,5 +160,27 @@ public class BitManipulation {
         // } else {
         //     System.out.println("The given number "+num+" is not the power of 2");
         // }
+
+        // find first set bit....
+        // int comp = 1;
+        // int num = 8;
+        // for(int i = 0; i < num; i++) {
+        //     if((num & comp) != 0)  {
+        //         System.out.println(i+1);
+        //         break;
+        //     }
+        //     comp = comp << 1;
+        // }
+
+        // String s = "11111110100";
+        
+        // int count = 0;
+        // for(int i = 0; i < s.length(); i++) {
+        //     if(s.charAt(i) == '1') count++;
+        // }
+        // System.out.println(count);
+
+        int arr[] = {1 ,2 ,3 ,4 ,5 ,6 ,8, 9, 10, 14 ,16 ,19, 22 ,23, 25, 26 ,27 ,29, 31, 34, 35 ,36 ,38, 39, 40 ,45, 46 ,48, 50, 51, 52, 57 ,59, 60, 61, 63, 67, 68, 69, 71, 75, 76 ,77 ,79, 81, 82, 83, 86 ,87, 88, 90 ,92, 93, 94, 95, 96, 98, 99, 100};
+        System.out.println(binarysearch(arr, arr.length, 93));
     }
 }
