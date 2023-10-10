@@ -1,5 +1,5 @@
 class A {
-    final public void name() {
+    public final void name() { // method with final key word
         System.out.println("Anupam Anand");
     }
 }
@@ -28,4 +28,5 @@ public class FinalKeyword {
 }
 
 // Note:- Variable declared with `final` keyword becomes constant and can't be changed....
-        // class created with `final` keyword can't be inherited....
+        // class created with `final` keyword can't be inherited...
+        // function/methods with final keyword can't be overwritten to inherited class...
