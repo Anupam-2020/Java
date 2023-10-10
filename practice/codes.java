@@ -33,5 +33,10 @@ public class codes {
             System.out.println("Hello World "+ i);
             i--;
         } while(i > -7);
+
+        StringBuilder strB = new StringBuilder("100100000111111101010010010011010101110110");
+        strB.setCharAt(2, 'z');
+        System.out.println(strB);
+        Math.min(2, 4);
     }
 }
