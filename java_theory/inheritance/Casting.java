@@ -16,7 +16,7 @@ public class Casting {
        obj.getValue();
 
 
-       Lower obj2 =  (Lower)obj;
+       Lower obj2 =  (Lower)obj; // lower acasting...
        obj2.getValue();
     }
 }
