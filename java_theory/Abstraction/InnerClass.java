@@ -1,3 +1,4 @@
+// package Abstraction;
 class A {
     int age;
     public void show() {
@@ -24,16 +25,14 @@ public class InnerClass {
         A.B obj1 = new A.B(); // object for class B if B is static inner-class....
         obj1.config();
 
-        A obj2 = new A() {
-            // Anonymous class....
+        A obj2 = new A() { // Anonymous inner class....
             public void show() {
                 System.out.println("In anonymous show");
             }
         };
         obj2.show();
 
-        C obj3 = new C() {
-            // anonymous and abstract inner class....
+        C obj3 = new C() { // anonymous inner class for abstract class....
             public void show() {
                 System.out.println("In anonymous config");
             }
