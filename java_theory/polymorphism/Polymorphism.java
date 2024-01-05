@@ -1,3 +1,4 @@
+package polymorphism;
 class A {
 
     public void print1() {
@@ -21,6 +22,8 @@ class B extends A {
 
 public class Polymorphism {
     public static void main(String[] args) {
+
+        // dynamic method dispatch(i.e runtime polymorphism)...
         A obj = new A();
         obj.print1();
 
@@ -30,3 +33,7 @@ public class Polymorphism {
         System.out.println(obj);
     }
 }
+
+// note:- polymorphism is of 2 types:- 
+        // 1. runtime polymorphism. ( Eg- Method Overriding )
+        // 2. Compile-time polymorphism. ( Eg.- Method Overloading )

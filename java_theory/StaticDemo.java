@@ -7,12 +7,12 @@ class Calculator {
     }
 
     static { // static block for static variables.....
-        num = 5;
+        num = 5; // we put the variable inside static block which we want to initialize only once.
         System.out.println("In static block");
     } 
 
     public Calculator() {  // constructor....
-        value = 200;
+        value = 200; // here value is initialized every-time object is created.
         System.out.println("In constructor");
     }
 
@@ -30,7 +30,7 @@ class Calculator {
     }
 }
 
-public class classDemo {
+public class StaticDemo {
     public static void main(String[] args) {
         Calculator cal = new Calculator();
 
@@ -42,5 +42,7 @@ public class classDemo {
         Calculator.num = 3; // static class variable should be called by class and not by object of the class.......
 
         Calculator.name(cal2);
+
+        // Class.forName("Calculator"); // to call static-block without calling constructor( it throws a exception so, to handle that we give throws in the main function...).
     }
 }

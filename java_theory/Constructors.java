@@ -20,7 +20,9 @@ class B extends A {
     }
 }
 
+// purpose of constructors to provide a default to the member variables and execute when object is called...
 public class Constructors {
+    
     public static void main(String[] args) {
         B obj = new B(5);
 

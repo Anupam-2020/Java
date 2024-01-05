@@ -9,8 +9,37 @@ class Student {
     }
 }
 
+class Marks {
+    String stud;
+    String roll;
+    int marks;
+}
+
 public class Classes {
     public static void main(String[] args) {
+
+        // Array of object
+        Marks mw1 = new Marks();
+        mw1.marks = 89;
+        mw1.roll = "12232";
+        mw1.stud = "Anurag";
+
+        Marks mw2 = new Marks();
+        mw2.marks = 91;
+        mw2.roll = "12233";
+        mw2.stud = "Anupam";
+
+        Marks mw[] = new Marks[2];
+        mw[0] = mw1;
+        mw[1] = mw2;
+
+        for(Marks stud: mw) {
+            System.out.println(stud.marks+ " " + stud.roll + " " + stud.stud);
+        }
+
+        // ---------------------------------------------------------------------------------
+
+        
         Student s1 = new Student();
         s1.name = "Anupam";
         // s1.marks = 98;
