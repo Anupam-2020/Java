@@ -1,6 +1,6 @@
 package Abstraction;
 abstract class Car {
-    public abstract void drive();
+    public abstract void drive(); // we can't use private access modifier for abstract class...
     public abstract void fly();
 
     public void playMusic() {

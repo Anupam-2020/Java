@@ -1,3 +1,5 @@
+package Strings;
+
 public class Stringss {
     public static String reverseString(String string) {
         if(string.isEmpty()) {

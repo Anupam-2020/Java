@@ -1,3 +1,7 @@
+// class - class -> extends
+// class - interface -> implements
+// interface - interface -> extends
+
 interface A {
     void run();
     void display();
@@ -17,7 +21,7 @@ interface D {
     int disp(int i, int j);
 }
 
-class Desktop implements A,B,C {
+class Desktop implements A,B,C { // we can implement multiple interfaces which is an addvantage over abstract class...
 
     public void run() {
         System.out.println("Inside run command");
@@ -55,7 +59,15 @@ public class Interfaces2 {
         obj3.show();
         obj1.show();
 
-        D obj4 = (i,j) -> i+j;
+        // M-1
+        // D obj4 = (i,j) -> i+j;
+
+        // M-2
+        D obj4 = (i,j) -> {
+            return i + j;
+        };
         System.out.println(obj4.disp(7, 8));
     }
 }
+
+// lambda expressions are only applicable for functional interfaces...
