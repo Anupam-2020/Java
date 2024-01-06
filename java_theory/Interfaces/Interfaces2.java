@@ -1,3 +1,4 @@
+package Interfaces;
 // class - class -> extends
 // class - interface -> implements
 // interface - interface -> extends

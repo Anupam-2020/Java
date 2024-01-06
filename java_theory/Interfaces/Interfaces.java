@@ -1,3 +1,4 @@
+package Interfaces;
 interface Computer {
     // Variables in interface are static and final by default...........
     String area = "Patna";
@@ -33,3 +34,8 @@ public class Interfaces {
         System.out.println(Computer.area);
     }
 }
+
+// Types of interfaces -> 
+// 1. Normal Interface
+// 2. Functional / SAM(Single Interface Method)
+// 3. Marker Interface

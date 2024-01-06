@@ -11,7 +11,7 @@ public class basics {
         byte k = (byte) a; // this is type casting(explicit conversion).
         float l = 5.6f;
         int m = (int) l;
-        // System.out.println(m);
+        System.out.println(m);
 
         // switch statement
         // Scanner sc = new Scanner(System.in);

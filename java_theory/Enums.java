@@ -13,10 +13,10 @@ public class Enums {
         }
 
         switch(s) {
-            case Running -> System.out.println("App is running");
-            case Failed -> System.out.println("App is failed");
-            case Pending -> System.out.println("App is in pending state");
-            default -> System.out.println("Done");
+            case Running : System.out.println("App is running");
+            case Failed : System.out.println("App is failed");
+            case Pending : System.out.println("App is in pending state");
+            default : System.out.println("Done");
         }
     }
 }
