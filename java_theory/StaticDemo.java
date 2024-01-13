@@ -17,6 +17,8 @@ class Calculator {
     }
 
     public static void name(Calculator cal) { // static function/method
+        // We can't call a normal function/variable in static method without class reference...
+        // cal.add(2,2);
         System.out.println("Static variable -> "+num+" Instance variable -> "+cal.value);
     }
 
