@@ -46,6 +46,34 @@ public class DoublyLinkedLists {
         return prevNode;
     }
 
+    static Node deleteTail() {
+        Node prevNode = head;
+        Node currNode = prevNode.next;
+        while(currNode.next != null) {
+            prevNode = currNode;
+            currNode = currNode.next;
+        }
+
+        currNode.prev = null;
+        prevNode.next = null;
+        return currNode;
+    }
+
+    static Node deleteAtIndex(int index) {
+        Node currNode = head;
+        if(index == 1) return deleteHead();
+
+        while(index > 1) {
+            currNode = currNode.next;
+            index--;
+        }
+        currNode.next.prev = currNode.prev;
+        currNode.prev.next = currNode.next;
+        currNode.next = null;
+        currNode.prev = null;
+        return currNode;
+    }
+
     static void printNode() {
         Node currNode = head;
         while(currNode != null) {
@@ -75,6 +103,8 @@ public class DoublyLinkedLists {
         arrayToDLL(arr);
         addNodeToFirst(10);
         System.out.println(deleteHead().data);
+        System.out.println(deleteTail().data);
+        System.out.println(deleteAtIndex(4).data);
         printNode();
     }
 }
