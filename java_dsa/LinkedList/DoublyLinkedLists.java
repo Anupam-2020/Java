@@ -13,7 +13,7 @@ class Node {
 public class DoublyLinkedLists {
     static Node head;
 
-    static void addNode(int data) {
+    static void addNodeToLast(int data) {
         Node currNode = new Node(data);
         if(head == null) {
             head = currNode;
@@ -33,6 +33,24 @@ public class DoublyLinkedLists {
         temp.next = head;
         head.prev = temp;
         head = temp;
+    }
+
+    static void addNodeToIndex(Node node, int index) { // considering 1 based indexing
+        if(index > getLengthOfDLL() || index <= 0) return;
+        else if(index == 1) {
+            addNodeToFirst(node.data);
+            return;
+        }
+
+        Node currNode = head;
+        while(index > 2) {
+            currNode = currNode.next;
+            index--;
+        }
+        node.prev = currNode;
+        node.next = currNode.next;
+        currNode.next.prev = node;
+        currNode.next = node;
     }
 
     static Node deleteHead() {
@@ -74,11 +92,21 @@ public class DoublyLinkedLists {
         return currNode;
     }
 
-    static void printNode() {
+    static void printDLL() {
         Node currNode = head;
         while(currNode != null) {
             System.out.print(currNode.data+" ≓ ");
             currNode = currNode.next;
+        }
+        System.out.print("null");
+        System.out.println();
+    }
+
+    static void printReverseDLL() {
+        Node currNode = head;
+        while(currNode != null) {
+            System.out.print(currNode.data+" ≓ ");
+            currNode = currNode.prev;
         }
         System.out.print("null");
         System.out.println();
@@ -98,13 +126,35 @@ public class DoublyLinkedLists {
         }
     }
 
+    static void reverseDLL() {
+        while(head.next != null) {
+            head = head.next;
+        }
+    }
+
+    static int getLengthOfDLL() {
+        Node currNode = head;
+        int count = 0;
+        while (currNode != null) {
+            currNode = currNode.next; 
+            count++;           
+        }
+        return count;
+    }
+
     public static void main(String[] args) {
         int arr[] = {4,5,1,2,3,4,5};
         arrayToDLL(arr);
         addNodeToFirst(10);
-        System.out.println(deleteHead().data);
-        System.out.println(deleteTail().data);
-        System.out.println(deleteAtIndex(4).data);
-        printNode();
+        addNodeToLast(24);
+        // System.out.println(deleteHead().data);
+        // System.out.println(deleteTail().data);
+        // System.out.println(deleteAtIndex(4).data);
+        Node node = new Node(32);
+        addNodeToIndex(node, 4);
+        printDLL();
+        // reverseDLL();
+        // printReverseDLL();
+        System.out.println(getLengthOfDLL());
     }
 }
