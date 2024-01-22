@@ -1,4 +1,4 @@
-package LinkedList;
+// package LinkedList;
 class Node {
     String data;
     Node next;
