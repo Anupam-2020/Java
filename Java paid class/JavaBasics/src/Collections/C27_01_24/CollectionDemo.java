@@ -42,7 +42,8 @@ public class CollectionDemo {
 
         Iterator<Integer> it = list.iterator();
         while (it.hasNext()) {
-            System.out.println(it.next());
+            Integer integer = it.next();
+            System.out.print(integer+" ");
         }
 
         for(Integer li: list) {
