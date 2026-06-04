@@ -8,6 +8,8 @@ import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
 
+import java.time.LocalDate;
+
 @Entity // tells the hibernate that this java class needs to convert to database table.
 @Table(name = "employees")
 @Getter
@@ -32,11 +34,11 @@ public class EmployeeEntity {
         isActive = active;
     }
 
-    public String getDateOfJoining() {
+    public LocalDate getDateOfJoining() {
         return dateOfJoining;
     }
 
-    public void setDateOfJoining(String dateOfJoining) {
+    public void setDateOfJoining(LocalDate dateOfJoining) {
         this.dateOfJoining = dateOfJoining;
     }
 
@@ -64,14 +66,31 @@ public class EmployeeEntity {
         this.name = name;
     }
 
+    public String getRole() {
+        return role;
+    }
+
+    public void setRole(String role) {
+        this.role = role;
+    }
+
+    public Integer getSalary() {
+        return salary;
+    }
+
+    public void setSalary(Integer salary) {
+        this.salary = salary;
+    }
+
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
     private String name;
     private String email;
     private Integer age;
-    private String dateOfJoining;
-
+    private LocalDate dateOfJoining;
     @JsonProperty("isActive")
     private Boolean isActive;
+    private String role;
+    private Integer salary;
 }

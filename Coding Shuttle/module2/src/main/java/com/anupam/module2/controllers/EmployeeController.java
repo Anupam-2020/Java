@@ -3,6 +3,7 @@ package com.anupam.module2.controllers;
 
 import com.anupam.module2.dto.EmployeeDTO;
 import com.anupam.module2.services.EmployeeService;
+import jakarta.validation.Valid;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
@@ -16,7 +17,7 @@ import java.util.Map;
 // The `@ComponentScan` annotation in the Spring framework automatically looks through specified Java packages to find classes marked with annotations like @Component, @Service, @Repository, and @Controller.
 // It tells Spring to convert these classes into managed "beans" and wire them together, eliminating the need to declare them manually.
 
-// Jackson is a popular Java library used primarily for translating Java objects into JSON data and vice versa.
+// Jackson is a Java library used primarily for translating Java objects into JSON data and vice versa.
 // In Spring Boot, it is the default, built-in engine that automatically handles serializing (converting Java to JSON) and deserializing (converting JSON to Java) data behind the scenes in your REST APIs.
 @RestController
 @RequestMapping(path = "/employees")
@@ -34,9 +35,9 @@ public class EmployeeController {
     }
 
     @GetMapping(path = "/{employeeId}")
-    public ResponseEntity<EmployeeDTO> getEmployeeId(@PathVariable Long employeeId) {
+    public ResponseEntity<EmployeeDTO> getEmployeeId(@PathVariable(name = "employeeId") Long id) {
 //        return new EmployeeDTO(employeeId, true, LocalDate.of(2026, 1, 2), 26, "@anupam@gmail.com", "Anupam");
-        return ResponseEntity.ok(employeeService.getEmployeeId(employeeId));
+        return ResponseEntity.ok(employeeService.getEmployeeId(id));
     }
 
     @GetMapping
@@ -45,12 +46,12 @@ public class EmployeeController {
     }
 
     @PostMapping
-    public ResponseEntity<EmployeeDTO> createEmployee(@RequestBody EmployeeDTO employee) {
+    public ResponseEntity<EmployeeDTO> createEmployee(@Valid @RequestBody EmployeeDTO employee) {
         return new ResponseEntity<>(employeeService.createNewEmployee(employee), HttpStatus.CREATED);
     }
 
     @PutMapping("/{employeeId}")
-    public ResponseEntity<EmployeeDTO> updateEmployeeById(@RequestBody EmployeeDTO employee, @PathVariable Long employeeId) {
+    public ResponseEntity<EmployeeDTO> updateEmployeeById(@RequestBody @Valid EmployeeDTO employee, @PathVariable Long employeeId) {
         return ResponseEntity.ok(employeeService.updateEmployeeById(employeeId, employee));
     }
 
@@ -60,7 +61,7 @@ public class EmployeeController {
     }
 
     @PatchMapping(path = "/{employeeId}")
-    public ResponseEntity<EmployeeDTO> updatePartialEmployee(@RequestBody Map<String, Object> updates, @PathVariable Long employeeId) {
+    public ResponseEntity<EmployeeDTO> updatePartialEmployee(@RequestBody @Valid Map<String, Object> updates, @PathVariable Long employeeId) {
         EmployeeDTO employeeDTO = employeeService.updatePartialEmployee(employeeId, updates);
         if(employeeDTO == null) return ResponseEntity.notFound().build();
         return ResponseEntity.ok(employeeDTO);
