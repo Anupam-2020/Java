@@ -2,6 +2,7 @@ package com.anupam.module2.services;
 
 import com.anupam.module2.dto.EmployeeDTO;
 import com.anupam.module2.entities.EmployeeEntity;
+import com.anupam.module2.exception.ResourceNotFoundException;
 import com.anupam.module2.repositories.EmployeeRepository;
 import org.modelmapper.ModelMapper;
 import org.springframework.data.util.ReflectionUtils;
@@ -11,6 +12,7 @@ import java.lang.reflect.Field;
 import java.time.LocalDate;
 import java.util.List;
 import java.util.Map;
+import java.util.NoSuchElementException;
 import java.util.Optional;
 import java.util.stream.Collectors;
 
@@ -31,6 +33,9 @@ public class EmployeeService {
     }
 
     public EmployeeDTO getEmployeeId(Long id) {
+        if(!employeeRepository.existsById(id)) {
+            throw new ResourceNotFoundException("Not found");
+        }
         Optional<EmployeeEntity> employeeEntity = employeeRepository.findById(id);
         return modelMapper.map(employeeEntity, EmployeeDTO.class);
 
