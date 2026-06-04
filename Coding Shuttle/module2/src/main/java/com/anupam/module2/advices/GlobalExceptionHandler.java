@@ -16,21 +16,29 @@ import java.util.stream.Collectors;
 public class GlobalExceptionHandler {
 
     @ExceptionHandler(ResourceNotFoundException.class)
-    public ResponseEntity<ApiError> handleResourceNotFound(ResourceNotFoundException ex) {
+    public ResponseEntity<ApiResponse<?>> handleResourceNotFound(ResourceNotFoundException ex) {
         ApiError apiError = ApiError.builder().status(HttpStatus.NOT_FOUND).message(ex.getMessage()).build();
-        return ResponseEntity.status(HttpStatus.NOT_FOUND).body(apiError);
+//        return ResponseEntity.status(HttpStatus.NOT_FOUND).body(apiError);
+        return buildErrorResponseEntity(apiError);
     }
 
     @ExceptionHandler(Exception.class)
-    public ResponseEntity<ApiError> handleInternalServerError(Exception exception) {
+    public ResponseEntity<ApiResponse<?>> handleInternalServerError(Exception exception) {
         ApiError apiError = ApiError.builder().status(HttpStatus.INTERNAL_SERVER_ERROR).message(exception.getMessage()).build();
-        return ResponseEntity.status(HttpStatus.INTERNAL_SERVER_ERROR).body(apiError);
+//        return ResponseEntity.status(HttpStatus.INTERNAL_SERVER_ERROR).body(apiError);
+        return buildErrorResponseEntity(apiError);
     }
 
     @ExceptionHandler(MethodArgumentNotValidException.class)
-    public ResponseEntity<ApiError> handleInputValidationErrors(MethodArgumentNotValidException exception) {
+    public ResponseEntity<ApiResponse<?>> handleInputValidationErrors(MethodArgumentNotValidException exception) {
         List<String> errors = exception.getBindingResult().getAllErrors().stream().map(DefaultMessageSourceResolvable::getDefaultMessage).collect(Collectors.toList());
         ApiError apiError = ApiError.builder().status(HttpStatus.BAD_REQUEST).message("Input validation failed").subErrors(errors).build();
-        return ResponseEntity.status(HttpStatus.BAD_REQUEST).body(apiError);
+//        return ResponseEntity.status(HttpStatus.BAD_REQUEST).body(apiError);
+        return buildErrorResponseEntity(apiError);
+    }
+
+    private ResponseEntity<ApiResponse<?>> buildErrorResponseEntity(ApiError apiError) {
+//        return new ResponseEntity<>(new ApiResponse<>(apiError), apiError.getStatus());
+        return ResponseEntity.status(apiError.getStatus()).body(new ApiResponse<>(apiError));
     }
 }
