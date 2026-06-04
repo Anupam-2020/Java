@@ -10,6 +10,7 @@ import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 import java.util.Map;
+import java.util.NoSuchElementException;
 
 // @ResponseBody ->The @ResponseBody annotation tells a Spring controller that the object returned from a method should be serialized directly into the HTTP response body, rather than looking for an HTML view or template.
 // It tells Spring to hand the returned Java object to a message converter—like Jackson—to transform it into JSON or XML and send it straight back to the client.
@@ -36,7 +37,6 @@ public class EmployeeController {
 
     @GetMapping(path = "/{employeeId}")
     public ResponseEntity<EmployeeDTO> getEmployeeId(@PathVariable(name = "employeeId") Long id) {
-//        return new EmployeeDTO(employeeId, true, LocalDate.of(2026, 1, 2), 26, "@anupam@gmail.com", "Anupam");
         return ResponseEntity.ok(employeeService.getEmployeeId(id));
     }
 
