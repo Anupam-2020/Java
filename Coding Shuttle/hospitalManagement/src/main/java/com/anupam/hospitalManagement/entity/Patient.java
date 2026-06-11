@@ -7,6 +7,7 @@ import org.hibernate.annotations.CreationTimestamp;
 
 import java.time.LocalDate;
 import java.time.LocalDateTime;
+import java.util.List;
 
 @Entity
 @Getter
@@ -44,4 +45,12 @@ public class Patient {
 
     @Enumerated(EnumType.STRING)
     private BloodGroupType bloodGroup;
+
+    @OneToOne(cascade = {CascadeType.MERGE, CascadeType.PERSIST})
+    @JoinColumn(name = "patient_insurance_id") // owning side
+    private Insurance insurance;
+    
+    @OneToMany(mappedBy = "patient")
+    @ToString.Exclude
+    private List<Appointment> appointments;
 }
