@@ -25,10 +25,10 @@ public class Appointment {
     private String reason;
 
     @ManyToOne
-    @JoinColumn(nullable = false) // patient is required.
+    @JoinColumn(nullable = false) // Patient is required. Owning side -> this side is dictating the foreign key column.
     private Patient patient;
 
-    @ManyToOne
+    @ManyToOne(fetch = FetchType.LAZY)
     @JoinColumn(nullable = false)
     private Doctor doctor;
 }

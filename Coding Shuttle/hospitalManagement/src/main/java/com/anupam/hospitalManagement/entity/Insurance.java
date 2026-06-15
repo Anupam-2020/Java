@@ -31,6 +31,6 @@ public class Insurance {
     @Column(nullable = false, updatable = false)
     private LocalDateTime createdAt;
 
-    @OneToOne(mappedBy = "insurance") // inverse side
+    @OneToOne(mappedBy = "insurance") // inverse side -> this side is not dictating the foreign key column.
     private Patient patient;
 }

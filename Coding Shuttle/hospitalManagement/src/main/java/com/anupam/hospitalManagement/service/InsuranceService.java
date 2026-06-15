@@ -18,11 +18,21 @@ public class InsuranceService {
 
     @Transactional
     public Patient assignInsuranceToPatient(Insurance insurance, Long patientId) {
-        Patient patient = patientRepository.findById(patientId).orElseThrow(() -> new EntityNotFoundException("Patient not found with id: "+ patientId));
-        patient.setInsurance(insurance);
+        Patient patient = patientRepository.findById(patientId)
+                .orElseThrow(() -> new EntityNotFoundException("Patient not found with id: "+ patientId));
 
         patient.setInsurance(insurance);
-        insurance.setPatient(patient); // for bidirectional maintenance
+        insurance.setPatient(patient); // for bidirectional maintenance ->
+        // meaning The database will still be updated correctly even if we ignore this line because Patient is the owning side,
+        // but the Java objects in-memory don't accurately reflect the relationship.
+
+        return patient;
+    }
+
+    @Transactional
+    public Patient disassociateInsuranceFromPatient(Long patientId) {
+        Patient patient = patientRepository.findById(patientId).orElseThrow(() -> new EntityNotFoundException("No patient found with id"+patientId));
+        patient.setInsurance(null);
 
         return patient;
     }
