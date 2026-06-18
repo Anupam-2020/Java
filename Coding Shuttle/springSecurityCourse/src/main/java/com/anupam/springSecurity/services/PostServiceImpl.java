@@ -2,10 +2,14 @@ package com.anupam.springSecurity.services;
 
 import com.anupam.springSecurity.dto.PostDTO;
 import com.anupam.springSecurity.entities.PostEntity;
+import com.anupam.springSecurity.entities.User;
 import com.anupam.springSecurity.exceptions.ResourceNotFoundException;
 import com.anupam.springSecurity.repositories.PostRepository;
 import lombok.RequiredArgsConstructor;
 import org.modelmapper.ModelMapper;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+import org.springframework.security.core.context.SecurityContextHolder;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
@@ -15,6 +19,7 @@ import java.util.stream.Collectors;
 @RequiredArgsConstructor
 public class PostServiceImpl implements PostService {
 
+    private static final Logger log = LoggerFactory.getLogger(PostServiceImpl.class);
     private final PostRepository postRepository;
     private final ModelMapper mapper;
 
@@ -35,6 +40,9 @@ public class PostServiceImpl implements PostService {
 
     @Override
     public PostDTO getPostById(Long postId) {
+        User user = (User) SecurityContextHolder.getContext().getAuthentication().getPrincipal();
+
+        log.info("User : {}", user);
         PostEntity postEntity = postRepository
                 .findById(postId)
                 .orElseThrow(() -> new ResourceNotFoundException("Post not found with id "+ postId));
