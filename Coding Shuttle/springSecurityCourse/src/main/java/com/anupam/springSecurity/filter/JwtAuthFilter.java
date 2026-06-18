@@ -21,7 +21,8 @@ import java.io.IOException;
 
 @Component
 @RequiredArgsConstructor
-public class JwtAuthFilter extends OncePerRequestFilter {
+// JwtAuthFilter is a custom filter that extends OncePerRequestFilter to handle JWT authentication for incoming requests. It checks the Authorization header for a valid JWT token, extracts the user ID from the token, retrieves the corresponding user from the database, and sets the authentication in the SecurityContextHolder if the user is valid. If any exception occurs during this process, it delegates the exception handling to a HandlerExceptionResolver.
+public class JwtAuthFilter extends OncePerRequestFilter { // OncePerRequestFilter is a base class for filters that guarantees to be executed only once per request. It provides a doFilterInternal method that subclasses must implement to perform the actual filtering logic.
 
     private final JwtService jwtService;
     private final UserService userService;
@@ -39,7 +40,9 @@ public class JwtAuthFilter extends OncePerRequestFilter {
     ) throws ServletException, IOException {
 
         try {
-            final String requestTokenHeader = request.getHeader("Authorization");
+            final String requestTokenHeader = request.getHeader("Authorization"); // Retrieves the value of the "Authorization" header from the incoming HTTP request.
+            // This header typically contains the JWT token prefixed with "Bearer".
+
             System.out.println("This is token ------> "+ requestTokenHeader);
             if(requestTokenHeader == null || !requestTokenHeader.startsWith("Bearer")) {
                 filterChain.doFilter(request, response);
@@ -50,7 +53,10 @@ public class JwtAuthFilter extends OncePerRequestFilter {
 
             Long userId = jwtService.getUserIdFromToken(token);
 
-            if(userId != null && SecurityContextHolder.getContext().getAuthentication() == null) {
+            if(userId != null && SecurityContextHolder.getContext().getAuthentication() == null) { // Checks if the user ID extracted from the token is not null and if there is no existing authentication in the SecurityContextHolder.
+                // SecurityContextHolder is a class that holds the security context for the current thread of execution.
+                // It allows access to the authentication and security-related information for the current user.
+                // That's why we are checking if the authentication is null, to avoid overwriting an existing authentication.
                 User user = userService.getUserById(userId);
                 UsernamePasswordAuthenticationToken usernamePasswordAuthenticationToken =
                         new UsernamePasswordAuthenticationToken(user, null, null);
