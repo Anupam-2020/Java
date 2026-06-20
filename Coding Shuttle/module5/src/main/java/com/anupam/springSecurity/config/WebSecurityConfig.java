@@ -2,6 +2,7 @@ package com.anupam.springSecurity.config;
 
 import com.anupam.springSecurity.filter.JwtAuthFilter;
 import com.anupam.springSecurity.filter.LoggingFilter;
+import com.anupam.springSecurity.handler.OAuth2SuccessHandler;
 import lombok.RequiredArgsConstructor;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
@@ -26,13 +27,14 @@ public class WebSecurityConfig {
     private final JwtAuthFilter jwtAuthFilter;
     private final PasswordEncoder passwordEncoder;
     private final LoggingFilter loggingFilter;
+    private final OAuth2SuccessHandler oAuth2SuccessHandler;
 
     @Bean
     SecurityFilterChain securityFilterChain(HttpSecurity httpSecurity)  throws Exception {
         httpSecurity
                 .authorizeHttpRequests(auth ->
                         auth
-                                .requestMatchers("/posts", "/error", "/public/**", "/auth/**").permitAll()
+                                .requestMatchers("/posts", "/error", "/public/**", "/auth/**", "/home.html").permitAll()
 //                                .requestMatchers("/posts/**").hasAnyRole("ADMIN")
                                 .anyRequest()
                                 .authenticated())
@@ -41,10 +43,13 @@ public class WebSecurityConfig {
                         sessionConfig.
                                 sessionCreationPolicy(
                                         SessionCreationPolicy.STATELESS) // types of session management - STATELESS, STATEFUL, IF_REQUIRED
-
                 )
                 .addFilterBefore(loggingFilter, UsernamePasswordAuthenticationFilter.class)
-                .addFilterBefore(jwtAuthFilter, UsernamePasswordAuthenticationFilter.class);
+                .addFilterBefore(jwtAuthFilter, UsernamePasswordAuthenticationFilter.class)
+                .oauth2Login(oauth2Config -> oauth2Config
+                        .failureUrl("/login?error=true") // Specify the URL to redirect to in case of authentication failure.
+                        .successHandler(oAuth2SuccessHandler)
+                );
 //                .formLogin(Customizer.withDefaults());
 
         return httpSecurity.build();

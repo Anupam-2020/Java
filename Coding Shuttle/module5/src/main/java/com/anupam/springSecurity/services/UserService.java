@@ -3,7 +3,6 @@ package com.anupam.springSecurity.services;
 import com.anupam.springSecurity.dto.SignUpDto;
 import com.anupam.springSecurity.dto.UserDto;
 import com.anupam.springSecurity.entities.User;
-import com.anupam.springSecurity.exceptions.ResourceNotFoundException;
 import com.anupam.springSecurity.repositories.UserRepository;
 import lombok.RequiredArgsConstructor;
 import org.modelmapper.ModelMapper;
@@ -32,6 +31,14 @@ public class UserService implements UserDetailsService {
 
     public User getUserById(Long userId) {
         return userRepository.findById(userId).orElseThrow(() -> new BadCredentialsException("User not found id"+userId));
+    }
+
+    public User getUserByEmail(String email) {
+        return userRepository.findByEmail(email).orElse(null);
+    }
+
+    public User save(User newUser) {
+        return userRepository.save(newUser);
     }
 
     public UserDto signUp(SignUpDto signUpDto) {

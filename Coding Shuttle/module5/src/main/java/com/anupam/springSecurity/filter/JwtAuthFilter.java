@@ -21,8 +21,11 @@ import java.io.IOException;
 
 @Component
 @RequiredArgsConstructor
-// JwtAuthFilter is a custom filter that extends OncePerRequestFilter to handle JWT authentication for incoming requests. It checks the Authorization header for a valid JWT token, extracts the user ID from the token, retrieves the corresponding user from the database, and sets the authentication in the SecurityContextHolder if the user is valid. If any exception occurs during this process, it delegates the exception handling to a HandlerExceptionResolver.
-public class JwtAuthFilter extends OncePerRequestFilter { // OncePerRequestFilter is a base class for filters that guarantees to be executed only once per request. It provides a doFilterInternal method that subclasses must implement to perform the actual filtering logic.
+// JwtAuthFilter is a custom filter that extends OncePerRequestFilter to handle JWT authentication for incoming requests.
+// It checks the Authorization header for a valid JWT token, extracts the user ID from the token, retrieves the corresponding user from the database,
+// and sets the authentication in the SecurityContextHolder if the user is valid.
+// If any exception occurs during this process, it delegates the exception handling to a HandlerExceptionResolver.
+public class JwtAuthFilter extends OncePerRequestFilter { // OncePerRequestFilter is a base class for filters that guarantees to be executed only once per request.
 
     private final JwtService jwtService;
     private final UserService userService;

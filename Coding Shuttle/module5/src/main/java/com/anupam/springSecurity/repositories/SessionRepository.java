@@ -1,8 +1,16 @@
 package com.anupam.springSecurity.repositories;
 
-import com.anupam.springSecurity.entities.SessionEntity;
+import com.anupam.springSecurity.entities.Session;
+import com.anupam.springSecurity.entities.User;
 import org.springframework.data.jpa.repository.JpaRepository;
+import org.springframework.stereotype.Repository;
 
-public interface SessionRepository extends JpaRepository<SessionEntity, Long> {
-    public void deleteByUserId(Long id);
+import java.util.List;
+import java.util.Optional;
+
+@Repository
+public interface SessionRepository extends JpaRepository<Session, Long> {
+    List<Session> findByUser(User user);
+
+    Optional<Session> findByRefreshToken(String refreshToken);
 }
