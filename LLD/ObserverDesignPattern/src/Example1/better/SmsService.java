@@ -1,4 +1,4 @@
-package better;
+package Example1.better;
 
 public class SmsService implements OrderObserver {
     @Override
