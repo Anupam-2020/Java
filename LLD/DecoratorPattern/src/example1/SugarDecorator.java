@@ -1,3 +1,5 @@
+package example1;
+
 public class SugarDecorator extends CoffeeDecorator {
     public SugarDecorator(Coffee coffee) {
         super(coffee);

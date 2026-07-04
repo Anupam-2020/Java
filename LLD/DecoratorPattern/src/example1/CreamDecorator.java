@@ -1,3 +1,5 @@
+package example1;
+
 public class CreamDecorator extends CoffeeDecorator {
 
     public CreamDecorator(Coffee coffee) {
