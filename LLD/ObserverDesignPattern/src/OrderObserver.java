@@ -1,2 +1,3 @@
-package PACKAGE_NAME;public interface OrderObserver {
+public interface OrderObserver {
+    void update();
 }

@@ -1,4 +1,4 @@
-package bad;
+package Example1.bad;
 
 public class OrderService {
     public void placeOrder(String orderId) {

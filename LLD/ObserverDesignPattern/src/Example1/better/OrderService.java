@@ -1,4 +1,4 @@
-package better;
+package Example1.better;
 
 import java.util.ArrayList;
 import java.util.List;
