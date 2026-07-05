@@ -1,3 +1,5 @@
+package example1;
+
 public class MilkDecorator extends CoffeeDecorator {
 
     public MilkDecorator(Coffee coffee) {
