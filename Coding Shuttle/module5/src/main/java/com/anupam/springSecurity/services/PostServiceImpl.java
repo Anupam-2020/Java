@@ -34,7 +34,9 @@ public class PostServiceImpl implements PostService {
 
     @Override
     public PostDTO createNewPost(PostDTO inputPost) {
+        User user = (User) SecurityContextHolder.getContext().getAuthentication();
         PostEntity postEntity = mapper.map(inputPost, PostEntity.class);
+        postEntity.setAuthor(user);
         return mapper.map(postRepository.save(postEntity), PostDTO.class);
     }
 

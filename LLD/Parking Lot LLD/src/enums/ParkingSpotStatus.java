@@ -1,2 +1,5 @@
-package enums;public enum ParkingSpotStatus {
+package enums;
+
+public enum ParkingSpotStatus {
+    AVAILABLE, OCCUPIED
 }

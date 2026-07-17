@@ -1,2 +1,5 @@
-package enums;public enum TicketStatus {
+package enums;
+
+public enum TicketStatus {
+    ACTIVE, PAID, LOST
 }

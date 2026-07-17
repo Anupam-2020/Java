@@ -4,6 +4,7 @@ import com.anupam.springSecurity.exceptions.ResourceNotFoundException;
 import io.jsonwebtoken.JwtException;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
+import org.springframework.security.access.AccessDeniedException;
 import org.springframework.web.bind.annotation.ExceptionHandler;
 import org.springframework.web.bind.annotation.RestControllerAdvice;
 
@@ -29,5 +30,11 @@ public class GlobalExceptionHandler {
     public ResponseEntity<ApiError> handleJwtException(JwtException exception) {
         ApiError apiError = ApiError.builder().statusCode(HttpStatus.UNAUTHORIZED).error(exception.getMessage()).build();
         return ResponseEntity.status(HttpStatus.UNAUTHORIZED).body(apiError);
+    }
+
+    @ExceptionHandler(AccessDeniedException.class)
+    public ResponseEntity<ApiError> handleAccessDeniedException(AuthenticationException exception) {
+        ApiError apiError = ApiError.builder().statusCode(HttpStatus.FORBIDDEN).error(exception.getLocalizedMessage()).build();
+        return ResponseEntity.status(HttpStatus.FORBIDDEN).body(apiError);
     }
 }

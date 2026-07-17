@@ -8,7 +8,7 @@ import java.util.Map;
 public interface EmployeeService {
     public boolean isEmployeeExists(Long employeeId);
 
-    public EmployeeDTO getEmployeeId(Long id);
+    public EmployeeDTO getEmployeeById(Long id);
 
     public List<EmployeeDTO> getAllEmployees();
 

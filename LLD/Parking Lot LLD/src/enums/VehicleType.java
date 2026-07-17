@@ -1,2 +1,5 @@
-package enums;public class VehicleType {
+package enums;
+
+public enum VehicleType {
+    BIKE, CAR, TRUCK
 }
