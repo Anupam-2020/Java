@@ -1,10 +1,16 @@
 package com.anupam.springSecurity.dto;
 
+import com.anupam.springSecurity.entities.enums.Permission;
+import com.anupam.springSecurity.entities.enums.Role;
 import lombok.Data;
+
+import java.util.Set;
 
 @Data
 public class SignUpDto {
-    String email;
-    String password;
-    String name;
+    private String email;
+    private String password;
+    private String name;
+    private Set<Role> roles;
+    private Set<Permission> permissions;
 }

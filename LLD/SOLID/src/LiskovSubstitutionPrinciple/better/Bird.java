@@ -1,4 +1,4 @@
-package LisKovSubstitutionPrinciple.better;
+package LiskovSubstitutionPrinciple.better;
 
 interface Bird {
     void eat();
