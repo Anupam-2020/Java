@@ -29,9 +29,9 @@ public class Doctor {
     @Column(nullable = false, unique = true, length = 100)
     private String email;
 
-    @ManyToMany(mappedBy = "doctors")
+    @ManyToMany(mappedBy = "doctors") // inverse side -> this side is not dictating the foreign key column.
     private Set<Department> departments = new HashSet<>();
 
-    @OneToMany(mappedBy = "doctor")
+    @OneToMany(mappedBy = "doctor") // inverse side -> this side is not dictating the foreign key column.
     private List<Appointment> appointments = new ArrayList<>();
 }

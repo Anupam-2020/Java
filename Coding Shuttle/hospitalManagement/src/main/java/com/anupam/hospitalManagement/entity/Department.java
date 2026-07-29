@@ -30,8 +30,8 @@ public class Department {
     @ManyToMany
     @JoinTable(
             name = "my_dpt_doctors",
-            joinColumns = @JoinColumn(name = "dpt_id"),
-            inverseJoinColumns = @JoinColumn(name = "doctor_id")
+            joinColumns = @JoinColumn(name = "dpt_id"), // this is the foreign key column in the join table that refers to the Department entity
+            inverseJoinColumns = @JoinColumn(name = "doctor_id") // this is the foreign key column in the join table that refers to the Doctor entity
     )
     private Set<Doctor> doctors = new HashSet<>();
 }
