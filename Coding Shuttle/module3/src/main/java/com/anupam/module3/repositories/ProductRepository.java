@@ -25,7 +25,7 @@ public interface ProductRepository extends JpaRepository<ProductEntity, Long> {
 
     List<ProductEntity> findByTitleContaining(String title);
 
-    @Query("SELECT e.title FROM ProductEntity e WHERE e.title=?1 AND e.price=?2")
+    @Query("SELECT e.title FROM ProductEntity e WHERE e.title=?1 AND e.price=?2") // here ? denotes the position of the parameter in the method signature
     Optional<ProductEntity> findByTitleAndPrice(String title, BigDecimal price);
 
     List<ProductEntity> findByTitleOrderByPrice(String title);

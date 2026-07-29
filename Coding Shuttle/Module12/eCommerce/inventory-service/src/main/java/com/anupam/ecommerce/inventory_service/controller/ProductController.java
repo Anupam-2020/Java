@@ -29,7 +29,9 @@ public class ProductController {
     @GetMapping("/fetchOrders")
     public String fetchOrdersFromOrderService(HttpServletRequest httpServletRequest) {
         log.info(httpServletRequest.getHeader("x-custom-header"));
-//        ServiceInstance orderService = discoveryClient.getInstances("order-service").getFirst();
+//        ServiceInstance orderService = discoveryClient.getInstances("order-service").getFirst(); // getInstances returns a list of instances for the given service name, and getFirst() retrieves the first instance from that list.
+
+//        System.out.println("orderService.getUri() = " + orderService.toString());
 
 //        return restClient.get()
 //                .uri(orderService.getUri()+"/orders/core/helloOrders")

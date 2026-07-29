@@ -16,10 +16,11 @@ import java.util.List;
 @NoArgsConstructor
 @Builder
 @ToString
-@Table(name = "patients", uniqueConstraints = {
+@Table(name = "patients", uniqueConstraints = { // uniqueConstraints are used to enforce uniqueness on one or more columns in the database table.
+        // It ensures that the combination of values in the specified columns is unique across all rows in the table.
         @UniqueConstraint(name = "unique_patient_email", columnNames = {"email"}),
         @UniqueConstraint(name = "unique_patient_name_date_of_birth", columnNames = {"name", "dateOfBirth"})
-}, indexes = {
+}, indexes = { // indexes are used to improve the performance of database queries by creating a data structure that allows for faster lookups based on the indexed columns.
         @Index(name = "idx_patient_date_of_birth", columnList = "dateOfBirth, email")
 })
 public class Patient {
@@ -31,7 +32,7 @@ public class Patient {
     // For Oracle, the default strategy is SEQUENCE.
     // For SQL Server, the default strategy is IDENTITY.
     // IDENTITY means that the database will automatically generate a unique value for this column when a new record is inserted.
-    // SEQUENCE means that a separate database sequence will be used to generate unique values for this column.
+    // SEQUENCE means that a separate database sequence will be used to generate unique values for this column. meaning that the database will maintain a separate sequence object that will be used to generate unique values for this column.
     // TABLE means that a separate table will be used to generate unique values for this column.
     private Long id;
 
@@ -55,6 +56,8 @@ public class Patient {
 
     @OneToOne(cascade = {CascadeType.MERGE, CascadeType.PERSIST}, orphanRemoval = true) // orphanRemoval = true -. means if we want to remove insurance but don't want to delete patient.
     // If we wanted to delete patient then we could use CascadeType.REMOVE
+    // CascadeType.MERGE means that if we update the insurance object, then the changes will be reflected in the database when we save the patient object.
+    // CascadeType.PERSIST means that if we save the patient object, then the insurance object will also be saved in the database.
     @JoinColumn(name = "patient_insurance_id") // owning side -> this side is dictating the foreign key column, and the name of the foreign key column is patient_insurance_id.
     // unique is by default true because it is one to one mapping.
     private Insurance insurance;
