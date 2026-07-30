@@ -1,2 +1,5 @@
-package enums;public enum PaymentStatus {
+package enums;
+
+public enum PaymentStatus {
+    PENDING, SUCCESS, FAILED
 }

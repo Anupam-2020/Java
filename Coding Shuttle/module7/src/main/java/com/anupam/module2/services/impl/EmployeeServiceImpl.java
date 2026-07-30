@@ -36,7 +36,7 @@ public class EmployeeServiceImpl implements EmployeeService {
     }
 
     @Override
-    public EmployeeDTO getEmployeeId(Long id) {
+    public EmployeeDTO getEmployeeById(Long id) {
         log.info("Fetching employee with id: {}", id);
         if(!employeeRepository.existsById(id)) {
             throw new ResourceNotFoundException("Not found");

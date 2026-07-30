@@ -1,5 +1,8 @@
 package example1;
 
+import java.util.HashMap;
+import java.util.Map;
+
 public class EmployeeDaoImpl implements EmployeeDao {
     @Override
     public void getEmployeeById(int empID) {

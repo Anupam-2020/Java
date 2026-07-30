@@ -4,3 +4,26 @@ spring:
 
   config:
     import: configserver:http://localhost:8888
+#api gateway config.
+  cloud:
+    gateway:
+      routes: # routes are the list of all the routes that we want to configure in our API gateway.
+        - id: order-service
+          uri: lb://ORDER-SERVICE # lb stands for load balancer, it will use eureka to find the service.
+          predicates: # Predicates are the conditions that we want to apply to the route. It can be based on the path, method, header, etc.
+            - Path=/api/v1/orders/**
+#            - Method= GET, POST
+          filters: # Filters are the actions that we want to apply to the route. It can be based on the path, method, header, etc.
+            - StripPrefix=2 # it will remove the first two segments of the path. here - /api/v1/orders/** will become /orders/** and then it will be forwarded to the order service.
+#            - RedirectTo=302, http://google.com
+        - id: inventory-service
+          uri: lb://INVENTORY-SERVICE
+          predicates:
+            - Path=/api/v1/inventory/**
+          filters:
+            - StripPrefix=2
+            - AddRequestHeader=X-Custom-Header, Anupam # it will add a custom header to the request before forwarding it to the inventory service.
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8761/eureka

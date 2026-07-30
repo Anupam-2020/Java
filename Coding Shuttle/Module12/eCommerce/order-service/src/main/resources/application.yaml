@@ -1,0 +1,41 @@
+management:
+  health:
+    circuitbreakers:
+      enabled: true
+  endpoints:
+    web:
+      exposure:
+        include: "*"
+  endpoint:
+    health:
+      show-details: always
+
+resilience4j: # Resilience4j is a lightweight fault tolerance library which provides implementations for common resilience patterns like Retry, Rate Limiter, Circuit Breaker, Bulkhead, and Time Limiter.
+  retry: # Retry is a resilience pattern that allows you to automatically re-execute a failed operation a certain number of times before giving up. It is useful for transient failures, such as network issues or temporary unavailability of a service.
+#    configs: # Configs define the default settings for retry behavior. These settings can be referenced by specific instances to apply consistent retry logic across different parts of the application.
+#      default: # Default configuration for retry settings. This can be referenced by specific instances to apply these settings.
+#        maxRetryAttempts: 3
+#        waitDuration: 5s
+    instances: # Instances define specific configurations for different services or operations. Each instance can have its own retry settings, allowing for fine-grained control over how retries are handled for different parts of the application.
+      inventoryRetry:
+#        baseConfig: default
+        waitDuration: 10s
+        maxRetryAttempts: 3
+  ratelimiter: # Rate Limiter is a resilience pattern that controls the rate at which requests are processed. It helps to prevent overwhelming a service with too many requests in a short period of time, which can lead to degraded performance or service unavailability.
+    instances:
+      inventoryRateLimiter:
+        limitRefreshPeriod: 1s
+        limitForPeriod: 100
+        timeoutDuration: 10ms
+  circuitbreaker: # Circuit Breaker is a resilience pattern that prevents an application from repeatedly trying to execute an operation that is likely to fail. It helps to avoid cascading failures and allows the system to recover gracefully.
+  # Whereas Retry is used to re-execute failed operations, Circuit Breaker is used to stop executing operations that are likely to fail, based on the failure rate of recent calls.
+    instances:
+      inventoryCircuitBreaker:
+        registerHealthIndicator: true  # Expose circuit breaker health via the actuator
+        slidingWindowSize: 10          # Size of the sliding window for call recording
+        slidingWindowType: COUNT_BASED # Use count-based sliding window -> The circuit breaker will consider the last 10 calls to determine the failure rate.
+        minimumNumberOfCalls: 10       # Minimum number of calls before calculating failure rate -> here calls means the number of requests made to the service. The circuit breaker will only evaluate the failure rate after at least 10 calls have been made.
+        failureRateThreshold: 50       # If 50% (5 out of 10) calls fail, the circuit goes to OPEN state
+        waitDurationInOpenState: 1s   # Time the circuit stays OPEN before moving to HALF_OPEN
+        permittedNumberOfCallsInHalfOpenState: 3  # Number of test calls in HALF_OPEN state
+        eventConsumerBufferSize: 10    # Buffer size for event logs

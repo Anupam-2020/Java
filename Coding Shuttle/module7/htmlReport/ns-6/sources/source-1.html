@@ -1,0 +1,169 @@
+
+
+
+<!DOCTYPE html>
+<html id="htmlId">
+<head>
+  <meta http-equiv="Content-Type" content="text/html;charset=UTF-8"> 
+  <title>Coverage Report > EmployeeDTO</title>
+  <style type="text/css">
+    @import "../../css/coverage.css";
+    @import "../../css/idea.min.css";
+  </style>
+  <script type="text/javascript" src="../../js/highlight.min.js"></script>
+  <script type="text/javascript" src="../../js/highlightjs-line-numbers.min.js"></script>
+</head>
+
+<body>
+<div class="content">
+<div class="breadCrumbs">
+Current scope:     <a href="../../index.html">all classes</a>
+    <span class="separator">|</span>
+    <a href="../index.html">com.anupam.module2.dto</a>
+</div>
+
+<h1>Coverage Summary for Class: EmployeeDTO (com.anupam.module2.dto)</h1>
+
+<table class="coverageStats">
+<tr>
+  <th class="name">Class</th>
+<th class="coverageStat 
+">
+  Class, %
+</th>
+<th class="coverageStat 
+">
+  Method, %
+</th>
+<th class="coverageStat 
+">
+  Line, %
+</th>
+</tr>
+<tr>
+  <td class="name">EmployeeDTO</td>
+<td class="coverageStat">
+  <span class="percent">
+    100%
+  </span>
+  <span class="absValue">
+    (1/1)
+  </span>
+</td>
+<td class="coverageStat">
+  <span class="percent">
+    75%
+  </span>
+  <span class="absValue">
+    (3/4)
+  </span>
+</td>
+<td class="coverageStat">
+  <span class="percent">
+    25%
+  </span>
+  <span class="absValue">
+    (3/12)
+  </span>
+</td>
+</tr>
+
+</table>
+
+<br/>
+<br/>
+
+
+<pre>
+<code class="sourceCode" id="sourceCode">&nbsp;package com.anupam.module2.dto;
+&nbsp;
+&nbsp;import com.anupam.module2.annotations.EmployeeRoleValidation;
+&nbsp;import com.fasterxml.jackson.annotation.JsonProperty;
+&nbsp;import jakarta.validation.constraints.*;
+&nbsp;import lombok.Getter;
+&nbsp;import lombok.Setter;
+&nbsp;
+&nbsp;import java.time.LocalDate;
+&nbsp;
+&nbsp;// DTO -&gt; Data Transfer Object. Spring Boot uses it specifically to separate database models (Entities) from the public API layer(Controllers).
+&nbsp;@Getter
+&nbsp;@Setter
+&nbsp;public class EmployeeDTO {
+&nbsp;
+&nbsp;    public Boolean getActive() {
+<b class="fc">&nbsp;        return isActive;</b>
+&nbsp;    }
+&nbsp;
+&nbsp;    public void setActive(Boolean active) {
+<b class="fc">&nbsp;        isActive = active;</b>
+&nbsp;    }
+&nbsp;
+<b class="nc">&nbsp;    public EmployeeDTO(Long id, Boolean isActive, LocalDate dateOfJoining, Integer age, String email, String name, String role, Integer salary) {</b>
+<b class="nc">&nbsp;        this.id = id;</b>
+<b class="nc">&nbsp;        this.isActive = isActive;</b>
+<b class="nc">&nbsp;        this.dateOfJoining = dateOfJoining;</b>
+<b class="nc">&nbsp;        this.age = age;</b>
+<b class="nc">&nbsp;        this.email = email;</b>
+<b class="nc">&nbsp;        this.name = name;</b>
+<b class="nc">&nbsp;        this.role = role;</b>
+<b class="nc">&nbsp;        this.salary = salary;</b>
+&nbsp;    }
+&nbsp;
+<b class="fc">&nbsp;    public EmployeeDTO() {</b>
+&nbsp;    }
+&nbsp;
+&nbsp;    private Long id;
+&nbsp;    @Size(min = 3, max = 10, message = &quot;number of chars between [3, 10&quot;)
+&nbsp;    @NotBlank(message = &quot;name can&#39;t be blank&quot;)
+&nbsp;    private String name;
+&nbsp;
+&nbsp;    @Email(message = &quot;email should be valid&quot;)
+&nbsp;    private String email;
+&nbsp;
+&nbsp;    @Max(value = 80, message = &quot;Age can&#39;t be &gt; 80&quot;)
+&nbsp;    @Min(value = 18, message = &quot;Age &gt;= 18&quot;)
+&nbsp;    private Integer age;
+&nbsp;
+&nbsp;//    @Pattern(regexp = &quot;^(ADMIN|USER)$&quot;, message = &quot;Role of employee can be USER or ADMIN&quot;)
+&nbsp;    @EmployeeRoleValidation
+&nbsp;    @NotBlank(message = &quot;Role can&#39;t be blank&quot;)
+&nbsp;    private String role; // admin or user
+&nbsp;
+&nbsp;    @NotNull(message = &quot;Salary can&#39;t be null&quot;)
+&nbsp;    @Positive(message = &quot;Salary should be positive&quot;)
+&nbsp;    private Integer salary;
+&nbsp;
+&nbsp;    @PastOrPresent(message = &quot;Date can&#39;t be future&quot;)
+&nbsp;    private LocalDate dateOfJoining;
+&nbsp;
+&nbsp;    @AssertTrue(message = &quot;Employees should be true&quot;)
+&nbsp;    @JsonProperty(&quot;isActive&quot;) // @JsonProperty is a Jackson annotation used to control how JSON fields are mapped to Java object fields during serialization and deserialization.
+&nbsp;    private Boolean isActive;
+&nbsp;}
+</code>
+</pre>
+</div>
+
+<script type="text/javascript">
+(function() {
+    var msie = false, msie9 = false;
+    /*@cc_on
+      msie = true;
+      @if (@_jscript_version >= 9)
+        msie9 = true;
+      @end
+    @*/
+
+    if (!msie || msie && msie9) {
+      hljs.highlightAll()
+      hljs.initLineNumbersOnLoad();
+    }
+})();
+</script>
+
+<div class="footer">
+    
+    <div style="float:right;">generated on 2026-06-25 13:52</div>
+</div>
+</body>
+</html>

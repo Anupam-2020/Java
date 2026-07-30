@@ -1,6 +1,5 @@
 package com.anupam.ecommerce.order_service.entity;
 
-import com.fasterxml.jackson.annotation.JsonIgnore;
 import jakarta.persistence.*;
 import lombok.*;
 

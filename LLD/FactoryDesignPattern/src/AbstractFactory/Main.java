@@ -2,8 +2,7 @@ package AbstractFactory;
 
 public class Main {
     public static void main(String[] args) {
-        GUIFactory factory = new WindowsFactory();
-        Button button = factory.createButton();
-        button.click();
+        new WindowsFactory().createButton().click();
+        new MacFactory().createButton().click();
     }
 }

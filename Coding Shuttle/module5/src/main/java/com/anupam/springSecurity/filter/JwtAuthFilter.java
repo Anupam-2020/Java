@@ -62,7 +62,7 @@ public class JwtAuthFilter extends OncePerRequestFilter { // OncePerRequestFilte
                 // That's why we are checking if the authentication is null, to avoid overwriting an existing authentication.
                 User user = userService.getUserById(userId);
                 UsernamePasswordAuthenticationToken usernamePasswordAuthenticationToken =
-                        new UsernamePasswordAuthenticationToken(user, null, null);
+                        new UsernamePasswordAuthenticationToken(user, null, user.getAuthorities());
                 usernamePasswordAuthenticationToken.setDetails(
                         new WebAuthenticationDetailsSource().buildDetails(request)
                 );

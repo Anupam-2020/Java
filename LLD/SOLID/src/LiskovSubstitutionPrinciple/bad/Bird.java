@@ -1,4 +1,4 @@
-package LisKovSubstitutionPrinciple.bad;
+package LiskovSubstitutionPrinciple.bad;
 
 // Child classes should be usable wherever parent classes are expected.
 class Bird {
