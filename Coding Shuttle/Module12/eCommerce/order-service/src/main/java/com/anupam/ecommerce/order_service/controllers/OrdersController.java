@@ -8,6 +8,8 @@ import lombok.extern.slf4j.Slf4j;
 import org.apache.coyote.Response;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+import org.springframework.beans.factory.annotation.Value;
+import org.springframework.cloud.context.config.annotation.RefreshScope;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
@@ -17,15 +19,25 @@ import java.util.List;
 @RequiredArgsConstructor
 @RequestMapping("/core")
 @Slf4j
+@RefreshScope // RefreshScope annotation is used to indicate that the bean should be refreshed when configuration changes are detected. This is useful in a microservices architecture where configuration properties may change at runtime, and you want the bean to pick up those changes without restarting the application.
 public class OrdersController {
+
+    @Value("${my.variable}")
+    private String myVariable;
 
     private final OrdersService ordersService;
     private final InventoryOpenFeignClient inventoryOpenFeignClient;
 
+//    @GetMapping("/helloOrders")
+//    public String helloOrders(@RequestHeader(name = "X-User-Id") Long userId) {
+//        return "hello from order service user id is: "+userId;
+//    }
+
     @GetMapping("/helloOrders")
     public String helloOrders() {
-        return "hello from order service";
+        return "hello from order service user id is: "+myVariable;
     }
+
 
     @PostMapping("/create-order")
     public ResponseEntity<OrderRequestDto> createOrder(@RequestBody OrderRequestDto orderRequestDto) {

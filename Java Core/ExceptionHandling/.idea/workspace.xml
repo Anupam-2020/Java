@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="9d7b9216-6880-4574-9f06-02117d4f578d" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/../../Ashwini Genie/SpringBeanFactoryIOCProject_2/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../Ashwini Genie/SpringBeanFactoryIOCProject_2/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Ashwini Genie/SpringBeanFactoryIOCProject_2/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../Ashwini Genie/SpringBeanFactoryIOCProject_2/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Coding Shuttle/Module12/eCommerce/order-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../Coding Shuttle/Module12/eCommerce/order-service/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Coding Shuttle/Module12/eCommerce/order-service/src/main/java/com/anupam/ecommerce/order_service/service/OrdersService.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../Coding Shuttle/Module12/eCommerce/order-service/src/main/java/com/anupam/ecommerce/order_service/service/OrdersService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Coding Shuttle/hospitalManagementSystem" beforeDir="false" afterPath="$PROJECT_DIR$/../../Coding Shuttle/hospitalManagementSystem" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Coding Shuttle/module5/src/main/java/com/anupam/springSecurity/advice/GlobalExceptionHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../Coding Shuttle/module5/src/main/java/com/anupam/springSecurity/advice/GlobalExceptionHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Coding Shuttle/module5/src/main/java/com/anupam/springSecurity/config/WebSecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../Coding Shuttle/module5/src/main/java/com/anupam/springSecurity/config/WebSecurityConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Coding Shuttle/module5/src/main/java/com/anupam/springSecurity/controllers/PostsController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../Coding Shuttle/module5/src/main/java/com/anupam/springSecurity/controllers/PostsController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Coding Shuttle/module5/src/main/java/com/anupam/springSecurity/dto/PostDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../Coding Shuttle/module5/src/main/java/com/anupam/springSecurity/dto/PostDTO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Coding Shuttle/module5/src/main/java/com/anupam/springSecurity/dto/SignUpDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../Coding Shuttle/module5/src/main/java/com/anupam/springSecurity/dto/SignUpDto.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Coding Shuttle/module5/src/main/java/com/anupam/springSecurity/entities/PostEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../Coding Shuttle/module5/src/main/java/com/anupam/springSecurity/entities/PostEntity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Coding Shuttle/module5/src/main/java/com/anupam/springSecurity/entities/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../Coding Shuttle/module5/src/main/java/com/anupam/springSecurity/entities/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Coding Shuttle/module5/src/main/java/com/anupam/springSecurity/filter/JwtAuthFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../Coding Shuttle/module5/src/main/java/com/anupam/springSecurity/filter/JwtAuthFilter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Coding Shuttle/module5/src/main/java/com/anupam/springSecurity/services/JwtService.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../Coding Shuttle/module5/src/main/java/com/anupam/springSecurity/services/JwtService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Coding Shuttle/module5/src/main/java/com/anupam/springSecurity/services/PostServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../Coding Shuttle/module5/src/main/java/com/anupam/springSecurity/services/PostServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Coding Shuttle/module7/src/main/java/com/anupam/module2/controllers/EmployeeController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../Coding Shuttle/module7/src/main/java/com/anupam/module2/controllers/EmployeeController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Coding Shuttle/module7/src/main/java/com/anupam/module2/services/EmployeeService.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../Coding Shuttle/module7/src/main/java/com/anupam/module2/services/EmployeeService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Coding Shuttle/module7/src/main/java/com/anupam/module2/services/impl/EmployeeServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../Coding Shuttle/module7/src/main/java/com/anupam/module2/services/impl/EmployeeServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Collections/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Collections/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Collections/.idea/copilot.data.migration.agent.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Collections/.idea/copilot.data.migration.ask.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Collections/.idea/copilot.data.migration.ask2agent.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Collections/.idea/copilot.data.migration.edit.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Collections/.idea/jpa-buddy.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Collections/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Collections/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Collections/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Collections/Collections.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Collections/src/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../LLD/FactoryDesignPattern/src/AbstractFactory/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../LLD/FactoryDesignPattern/src/AbstractFactory/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../LLD/HashMaplmplementation/src/MyHashMap.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../LLD/HashMaplmplementation/src/MyHashMap.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../LLD/Parking Lot LLD/src/enums/ParkingSpotStatus.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../LLD/Parking Lot LLD/src/enums/ParkingSpotStatus.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../LLD/Parking Lot LLD/src/enums/ParkingSpotType.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../LLD/Parking Lot LLD/src/enums/ParkingSpotType.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../LLD/Parking Lot LLD/src/enums/PaymentStatus.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../LLD/Parking Lot LLD/src/enums/PaymentStatus.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../LLD/Parking Lot LLD/src/enums/TicketStatus.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../LLD/Parking Lot LLD/src/enums/TicketStatus.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../LLD/Parking Lot LLD/src/enums/VehicleType.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../LLD/Parking Lot LLD/src/enums/VehicleType.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../LLD/ProxyDesignPattern/src/example1/EmployeeDaoImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../LLD/ProxyDesignPattern/src/example1/EmployeeDaoImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../LLD/SOLID/src/LiskovSubstitutionPrinciple/bad/Bird.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../LLD/SOLID/src/LiskovSubstitutionPrinciple/bad/Bird.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../LLD/SOLID/src/LiskovSubstitutionPrinciple/better/Bird.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../LLD/SOLID/src/LiskovSubstitutionPrinciple/better/Bird.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../OOPS/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../OOPS/.idea/misc.xml" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CopilotPersistence">
+    <persistenceIdMap>
+      <entry key="_/Users/anupamanand/Desktop/java/Java Core/ExceptionHandling" value="3Gazpsv5faP4tnEGP9pcAmJGmJn" />
+    </persistenceIdMap>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
+  </component>
+  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
+  "lastFilter": {
+    "state": "OPEN",
+    "assignee": "Anupam-2020"
+  }
+}]]></component>
+  <component name="GithubPullRequestsUISettings"><![CDATA[{
+  "selectedUrlAndAccountId": {
+    "url": "https://github.com/Anupam-2020/Java",
+    "accountId": "197f93f4-e619-4f51-93ca-73aa583a0587"
+  }
+}]]></component>
+  <component name="ProjectColorInfo"><![CDATA[{
+  "associatedIndex": 8
+}]]></component>
+  <component name="ProjectId" id="3Gazpsv5faP4tnEGP9pcAmJGmJn" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="1" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Application.ArithmeticExceptionDemo.executor": "Run",
+    "Application.ClassCastExceptionDemo.executor": "Run",
+    "Application.ClassNotFoundExceptionDemo.executor": "Run",
+    "Application.IndexOutOfBondExceptionDemo.executor": "Run",
+    "Application.Main.executor": "Run",
+    "Application.NullPointerExceptionDemo.executor": "Run",
+    "Application.NumberFormatExceptionDemo.executor": "Run",
+    "Application.StringIndexOutOfBoundExceptionDemo.executor": "Run",
+    "Application.unchecked_or_runtime_exception.Main.executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "java__core",
+    "kotlin-language-version-configured": "true",
+    "onboarding.tips.debug.path": "/Users/anupamanand/Desktop/java/Java Core/ExceptionHandling/src/Main.java",
+    "settings.editor.selected.configurable": "preferences.pluginManager"
+  }
+}]]></component>
+  <component name="RunManager" selected="Application.Main">
+    <configuration name="ClassNotFoundExceptionDemo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="checked_or_compiletime_exception.ClassNotFoundExceptionDemo" />
+      <module name="ExceptionHandling" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="checked_or_compiletime_exception.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="customException.Main" />
+      <module name="ExceptionHandling" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="customException.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="NullPointerExceptionDemo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="unchecked_or_runtime_exception.NullPointerExceptionDemo" />
+      <module name="ExceptionHandling" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="unchecked_or_runtime_exception.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="NumberFormatExceptionDemo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="unchecked_or_runtime_exception.IllegalArgumentException.NumberFormatExceptionDemo" />
+      <module name="ExceptionHandling" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="unchecked_or_runtime_exception.IllegalArgumentException.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="StringIndexOutOfBoundExceptionDemo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="unchecked_or_runtime_exception.StringIndexOutOfBoundExceptionDemo" />
+      <module name="ExceptionHandling" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="unchecked_or_runtime_exception.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.Main" />
+        <item itemvalue="Application.ClassNotFoundExceptionDemo" />
+        <item itemvalue="Application.NumberFormatExceptionDemo" />
+        <item itemvalue="Application.NullPointerExceptionDemo" />
+        <item itemvalue="Application.StringIndexOutOfBoundExceptionDemo" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="9d7b9216-6880-4574-9f06-02117d4f578d" name="Changes" comment="" />
+      <created>1784224655103</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1784224655103</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="github-copilot-workspace">
+    <instructionFileLocations>
+      <option value=".github/instructions" />
+    </instructionFileLocations>
+    <promptFileLocations>
+      <option value=".github/prompts" />
+    </promptFileLocations>
+  </component>
+</project>
