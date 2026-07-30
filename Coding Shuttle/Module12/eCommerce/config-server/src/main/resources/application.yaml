@@ -7,7 +7,7 @@ spring:
         git:
           uri: https://github.com/Anupam-2020/ecommerce-config-server.git
           username: Anupam-2020
-          password: 
+          password:
           default-label: master
 server:
     port: 8888
