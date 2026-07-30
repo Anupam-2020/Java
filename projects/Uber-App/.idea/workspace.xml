@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="0f287a9c-398b-458c-bdf1-c091155ee68a" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/../../Coding Shuttle/Module12/eCommerce/api-gateway/src/main/resources/application.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/../../Coding Shuttle/Module12/eCommerce/api-gateway/src/main/resources/application.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Coding Shuttle/Module12/eCommerce/inventory-service/src/main/java/com/anupam/ecommerce/inventory_service/controller/ProductController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../Coding Shuttle/Module12/eCommerce/inventory-service/src/main/java/com/anupam/ecommerce/inventory_service/controller/ProductController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Coding Shuttle/Module12/eCommerce/inventory-service/src/main/java/com/anupam/ecommerce/inventory_service/service/ProductService.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../Coding Shuttle/Module12/eCommerce/inventory-service/src/main/java/com/anupam/ecommerce/inventory_service/service/ProductService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Coding Shuttle/Module12/eCommerce/order-service/src/main/java/com/anupam/ecommerce/order_service/entity/OrderItem.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../Coding Shuttle/Module12/eCommerce/order-service/src/main/java/com/anupam/ecommerce/order_service/entity/OrderItem.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Coding Shuttle/hospitalManagement/src/main/java/com/anupam/hospitalManagement/entity/Appointment.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../Coding Shuttle/hospitalManagement/src/main/java/com/anupam/hospitalManagement/entity/Appointment.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Coding Shuttle/hospitalManagement/src/main/java/com/anupam/hospitalManagement/entity/Department.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../Coding Shuttle/hospitalManagement/src/main/java/com/anupam/hospitalManagement/entity/Department.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Coding Shuttle/hospitalManagement/src/main/java/com/anupam/hospitalManagement/entity/Doctor.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../Coding Shuttle/hospitalManagement/src/main/java/com/anupam/hospitalManagement/entity/Doctor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Coding Shuttle/hospitalManagement/src/main/java/com/anupam/hospitalManagement/entity/Patient.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../Coding Shuttle/hospitalManagement/src/main/java/com/anupam/hospitalManagement/entity/Patient.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Coding Shuttle/hospitalManagement/src/main/java/com/anupam/hospitalManagement/repository/PatientRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../Coding Shuttle/hospitalManagement/src/main/java/com/anupam/hospitalManagement/repository/PatientRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Coding Shuttle/hospitalManagementSystem" beforeDir="false" afterPath="$PROJECT_DIR$/../../Coding Shuttle/hospitalManagementSystem" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Coding Shuttle/module3/src/main/java/com/anupam/module3/repositories/ProductRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../Coding Shuttle/module3/src/main/java/com/anupam/module3/repositories/ProductRepository.java" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CopilotPersistence">
+    <persistenceIdMap>
+      <entry key="_/Users/anupamanand/Desktop/java/projects/Uber-App" value="3H5KxEaTilDJ2UT5fO2cv88eX9P" />
+    </persistenceIdMap>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Enum" />
+        <option value="Interface" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
+  </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;Anupam-2020&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/Anupam-2020/Java&quot;,
+    &quot;accountId&quot;: &quot;197f93f4-e619-4f51-93ca-73aa583a0587&quot;
+  }
+}</component>
+  <component name="JpbToolWindowState">
+    <option name="isToolWindowVisible" value="false" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 1
+}</component>
+  <component name="ProjectId" id="3H5KxEaTilDJ2UT5fO2cv88eX9P" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="1" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Application.LocationServiceApplication.executor&quot;: &quot;Run&quot;,
+    &quot;Application.MatchingServiceApplication.executor&quot;: &quot;Run&quot;,
+    &quot;Application.RideServiceApplication.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;projects&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;onboarding.tips.debug.path&quot;: &quot;/Users/anupamanand/Desktop/java/projects/Uber-App/src/main/java/org/example/Main.java&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;
+  }
+}</component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="configurationTypes">
+      <set>
+        <option value="Application" />
+      </set>
+    </option>
+  </component>
+  <component name="RunManager" selected="Application.RideServiceApplication">
+    <configuration name="LocationServiceApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.rideshare.location_service.LocationServiceApplication" />
+      <module name="location-service" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.rideshare.location_service.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MatchingServiceApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.rideshare.matching_service.MatchingServiceApplication" />
+      <module name="matching-service" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.rideshare.matching_service.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="RideServiceApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.rideshare.rideservice.RideServiceApplication" />
+      <module name="ride-service" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.rideshare.rideservice.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.MatchingServiceApplication" />
+        <item itemvalue="Application.RideServiceApplication" />
+        <item itemvalue="Application.LocationServiceApplication" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="0f287a9c-398b-458c-bdf1-c091155ee68a" name="Changes" comment="" />
+      <created>1785152735843</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1785152735843</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/org/example/Main.java</url>
+          <line>13</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+  <component name="github-copilot-workspace">
+    <instructionFileLocations>
+      <option value=".github/instructions" />
+    </instructionFileLocations>
+    <promptFileLocations>
+      <option value=".github/prompts" />
+    </promptFileLocations>
+  </component>
+</project>

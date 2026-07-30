@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="e583a24b-2eb9-4a58-a9f7-e5bc73af9e74" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/../../Coding Shuttle/hospitalManagementSystem" beforeDir="false" afterPath="$PROJECT_DIR$/../../Coding Shuttle/hospitalManagementSystem" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Coding Shuttle/module5/src/main/java/com/anupam/springSecurity/config/WebSecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../Coding Shuttle/module5/src/main/java/com/anupam/springSecurity/config/WebSecurityConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Coding Shuttle/module5/src/main/java/com/anupam/springSecurity/dto/SignUpDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../Coding Shuttle/module5/src/main/java/com/anupam/springSecurity/dto/SignUpDto.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Coding Shuttle/module5/src/main/java/com/anupam/springSecurity/entities/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../Coding Shuttle/module5/src/main/java/com/anupam/springSecurity/entities/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Coding Shuttle/module5/src/main/java/com/anupam/springSecurity/filter/JwtAuthFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../Coding Shuttle/module5/src/main/java/com/anupam/springSecurity/filter/JwtAuthFilter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Coding Shuttle/module5/src/main/java/com/anupam/springSecurity/services/JwtService.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../Coding Shuttle/module5/src/main/java/com/anupam/springSecurity/services/JwtService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Coding Shuttle/module7/src/main/java/com/anupam/module2/controllers/EmployeeController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../Coding Shuttle/module7/src/main/java/com/anupam/module2/controllers/EmployeeController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Coding Shuttle/module7/src/main/java/com/anupam/module2/services/EmployeeService.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../Coding Shuttle/module7/src/main/java/com/anupam/module2/services/EmployeeService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Coding Shuttle/module7/src/main/java/com/anupam/module2/services/impl/EmployeeServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../Coding Shuttle/module7/src/main/java/com/anupam/module2/services/impl/EmployeeServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Collections/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../Collections/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Collections/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../Collections/src/Main.java" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CopilotPersistence">
+    <persistenceIdMap>
+      <entry key="_/Users/anupamanand/Desktop/java/projects/linkedinProject" value="3FdtGlw0Zpu7PduF9fqr4gNxLkd" />
+    </persistenceIdMap>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Interface" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
+  </component>
+  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
+  "lastFilter": {
+    "state": "OPEN",
+    "assignee": "Anupam-2020"
+  }
+}]]></component>
+  <component name="GithubPullRequestsUISettings"><![CDATA[{
+  "selectedUrlAndAccountId": {
+    "url": "https://github.com/Anupam-2020/Java",
+    "accountId": "197f93f4-e619-4f51-93ca-73aa583a0587"
+  }
+}]]></component>
+  <component name="JpbToolWindowState">
+    <option name="isToolWindowVisible" value="false" />
+  </component>
+  <component name="ProjectColorInfo"><![CDATA[{
+  "associatedIndex": 8
+}]]></component>
+  <component name="ProjectId" id="3FdtGlw0Zpu7PduF9fqr4gNxLkd" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="1" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Application.PostsServiceApplication.executor": "Run",
+    "Application.UserServiceApplication.executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "coding__shuttle",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "/Users/anupamanand/Desktop/java/projects/linkedinProject/userService/src/main/java/com/anupam/linkedinProject/userService",
+    "settings.editor.selected.configurable": "preferences.pluginManager"
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/userService/src/main/java/com/anupam/linkedinProject/userService" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="configurationTypes">
+      <set>
+        <option value="Application" />
+      </set>
+    </option>
+  </component>
+  <component name="RunManager" selected="Application.UserServiceApplication">
+    <configuration name="PostsServiceApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.anupam.linkedinProject.postsService.PostsServiceApplication" />
+      <module name="postsService" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.anupam.linkedinProject.postsService.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="UserServiceApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.anupam.linkedinProject.userService.UserServiceApplication" />
+      <module name="userService" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.anupam.linkedinProject.userService.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.UserServiceApplication" />
+        <item itemvalue="Application.PostsServiceApplication" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="e583a24b-2eb9-4a58-a9f7-e5bc73af9e74" name="Changes" comment="" />
+      <created>1782416680429</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1782416680429</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="github-copilot-workspace">
+    <instructionFileLocations>
+      <option value=".github/instructions" />
+    </instructionFileLocations>
+    <promptFileLocations>
+      <option value=".github/prompts" />
+    </promptFileLocations>
+  </component>
+</project>
