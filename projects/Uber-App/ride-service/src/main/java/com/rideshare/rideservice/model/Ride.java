@@ -15,7 +15,7 @@ import java.time.LocalDateTime;
 public class Ride {
 
     @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @GeneratedValue(strategy = GenerationType.UUID)
     private String id;
 
     @Column(nullable = false)
@@ -24,19 +24,19 @@ public class Ride {
     // who accepted the ride(null until matched.
     private String driverId;
 
-    @Column(nullable = false)
+//    @Column(nullable = false)
     private double pickupLatitude;
 
-    @Column(nullable = false)
+//    @Column(nullable = false)
     private double pickupLongitude;
 
     @Column(nullable = false)
-    private String pickupAddress;
+    private String pickUpAddress;
 
-    @Column(nullable = false)
+//    @Column(nullable = false)
     private double dropLatitude;
 
-    @Column(nullable = false)
+//    @Column(nullable = false)
     private double dropLongitude;
 
     @Column(nullable = false)

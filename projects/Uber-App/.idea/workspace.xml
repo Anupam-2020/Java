@@ -5,17 +5,52 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0f287a9c-398b-458c-bdf1-c091155ee68a" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/../../Coding Shuttle/Module12/eCommerce/api-gateway/src/main/resources/application.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/../../Coding Shuttle/Module12/eCommerce/api-gateway/src/main/resources/application.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Coding Shuttle/Module12/eCommerce/inventory-service/src/main/java/com/anupam/ecommerce/inventory_service/controller/ProductController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../Coding Shuttle/Module12/eCommerce/inventory-service/src/main/java/com/anupam/ecommerce/inventory_service/controller/ProductController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Coding Shuttle/Module12/eCommerce/inventory-service/src/main/java/com/anupam/ecommerce/inventory_service/service/ProductService.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../Coding Shuttle/Module12/eCommerce/inventory-service/src/main/java/com/anupam/ecommerce/inventory_service/service/ProductService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Coding Shuttle/Module12/eCommerce/order-service/src/main/java/com/anupam/ecommerce/order_service/entity/OrderItem.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../Coding Shuttle/Module12/eCommerce/order-service/src/main/java/com/anupam/ecommerce/order_service/entity/OrderItem.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Coding Shuttle/hospitalManagement/src/main/java/com/anupam/hospitalManagement/entity/Appointment.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../Coding Shuttle/hospitalManagement/src/main/java/com/anupam/hospitalManagement/entity/Appointment.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Coding Shuttle/hospitalManagement/src/main/java/com/anupam/hospitalManagement/entity/Department.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../Coding Shuttle/hospitalManagement/src/main/java/com/anupam/hospitalManagement/entity/Department.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Coding Shuttle/hospitalManagement/src/main/java/com/anupam/hospitalManagement/entity/Doctor.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../Coding Shuttle/hospitalManagement/src/main/java/com/anupam/hospitalManagement/entity/Doctor.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Coding Shuttle/hospitalManagement/src/main/java/com/anupam/hospitalManagement/entity/Patient.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../Coding Shuttle/hospitalManagement/src/main/java/com/anupam/hospitalManagement/entity/Patient.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Coding Shuttle/hospitalManagement/src/main/java/com/anupam/hospitalManagement/repository/PatientRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../Coding Shuttle/hospitalManagement/src/main/java/com/anupam/hospitalManagement/repository/PatientRepository.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../Coding Shuttle/hospitalManagementSystem" beforeDir="false" afterPath="$PROJECT_DIR$/../../Coding Shuttle/hospitalManagementSystem" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Coding Shuttle/module3/src/main/java/com/anupam/module3/repositories/ProductRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../Coding Shuttle/module3/src/main/java/com/anupam/module3/repositories/ProductRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Module14/learnKafka/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Module14/learnKafka/.idea/compiler.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Module14/learnKafka/.idea/copilot.data.migration.agent.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Module14/learnKafka/.idea/copilot.data.migration.ask.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Module14/learnKafka/.idea/copilot.data.migration.ask2agent.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Module14/learnKafka/.idea/copilot.data.migration.edit.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Module14/learnKafka/.idea/encodings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Module14/learnKafka/.idea/jarRepositories.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Module14/learnKafka/.idea/jpa-buddy.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Module14/learnKafka/.idea/learnKafka.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Module14/learnKafka/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Module14/learnKafka/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Module14/learnKafka/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Module14/learnKafka/notification-service/.gitattributes" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Module14/learnKafka/notification-service/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Module14/learnKafka/notification-service/.mvn/wrapper/maven-wrapper.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Module14/learnKafka/notification-service/mvnw" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Module14/learnKafka/notification-service/mvnw.cmd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Module14/learnKafka/notification-service/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Module14/learnKafka/notification-service/src/main/java/com/anupam/learnKafka/notification_service/NotificationServiceApplication.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Module14/learnKafka/notification-service/src/main/java/com/anupam/learnKafka/notification_service/consumer/UserKafkaConsumer.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Module14/learnKafka/notification-service/src/main/resources/application.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Module14/learnKafka/notification-service/src/test/java/com/anupam/learnKafka/notification_service/NotificationServiceApplicationTests.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Module14/learnKafka/user-service/.gitattributes" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Module14/learnKafka/user-service/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Module14/learnKafka/user-service/.mvn/wrapper/maven-wrapper.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Module14/learnKafka/user-service/mvnw" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Module14/learnKafka/user-service/mvnw.cmd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Module14/learnKafka/user-service/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Module14/learnKafka/user-service/src/main/java/com/anupam/learnKafka/user_service/UserServiceApplication.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Module14/learnKafka/user-service/src/main/java/com/anupam/learnKafka/user_service/config/KafkaTopicConfig.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Module14/learnKafka/user-service/src/main/java/com/anupam/learnKafka/user_service/controller/UserController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Module14/learnKafka/user-service/src/main/resources/application.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Module14/learnKafka/user-service/src/test/java/com/anupam/learnKafka/user_service/UserServiceApplicationTests.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/matching-service/src/main/resources/application.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/matching-service/src/main/resources/application.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ride-service/src/main/java/com/rideshare/rideservice/controller/GlobalExceptionHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/ride-service/src/main/java/com/rideshare/rideservice/controller/GlobalExceptionHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ride-service/src/main/java/com/rideshare/rideservice/dto/RideRequest.java" beforeDir="false" afterPath="$PROJECT_DIR$/ride-service/src/main/java/com/rideshare/rideservice/dto/RideRequest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ride-service/src/main/java/com/rideshare/rideservice/model/Ride.java" beforeDir="false" afterPath="$PROJECT_DIR$/ride-service/src/main/java/com/rideshare/rideservice/model/Ride.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ride-service/src/main/java/com/rideshare/rideservice/service/RideService.java" beforeDir="false" afterPath="$PROJECT_DIR$/ride-service/src/main/java/com/rideshare/rideservice/service/RideService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ride-service/src/main/resources/application.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/ride-service/src/main/resources/application.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ride-service/target/classes/application.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/ride-service/target/classes/application.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ride-service/target/classes/com/rideshare/rideservice/dto/RideRequest.class" beforeDir="false" afterPath="$PROJECT_DIR$/ride-service/target/classes/com/rideshare/rideservice/dto/RideRequest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ride-service/target/classes/com/rideshare/rideservice/model/Ride.class" beforeDir="false" afterPath="$PROJECT_DIR$/ride-service/target/classes/com/rideshare/rideservice/model/Ride.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ride-service/target/classes/com/rideshare/rideservice/service/RideService.class" beforeDir="false" afterPath="$PROJECT_DIR$/ride-service/target/classes/com/rideshare/rideservice/service/RideService.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -65,18 +100,20 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Application.LocationServiceApplication.executor&quot;: &quot;Run&quot;,
-    &quot;Application.MatchingServiceApplication.executor&quot;: &quot;Run&quot;,
-    &quot;Application.RideServiceApplication.executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;projects&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;onboarding.tips.debug.path&quot;: &quot;/Users/anupamanand/Desktop/java/projects/Uber-App/src/main/java/org/example/Main.java&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Application.LocationServiceApplication.executor": "Run",
+    "Application.MatchingServiceApplication.executor": "Run",
+    "Application.RideServiceApplication.executor": "Run",
+    "Docker.docker-compose.yaml.mysql: Compose Deployment.executor": "Run",
+    "Docker.docker-compose.yaml: Compose Deployment.executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "main",
+    "kotlin-language-version-configured": "true",
+    "onboarding.tips.debug.path": "/Users/anupamanand/Desktop/java/projects/Uber-App/src/main/java/org/example/Main.java",
+    "settings.editor.selected.configurable": "preferences.pluginManager"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$" />
@@ -89,7 +126,7 @@
       </set>
     </option>
   </component>
-  <component name="RunManager" selected="Application.RideServiceApplication">
+  <component name="RunManager" selected="Docker.docker-compose.yaml.mysql: Compose Deployment">
     <configuration name="LocationServiceApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.rideshare.location_service.LocationServiceApplication" />
       <module name="location-service" />
@@ -129,11 +166,38 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration default="true" type="docker-deploy" factoryName="docker-compose.yml" temporary="true">
+      <deployment type="docker-compose.yml" />
+      <method v="2" />
+    </configuration>
+    <configuration name="docker-compose.yaml: Compose Deployment" type="docker-deploy" factoryName="docker-compose.yml" temporary="true" server-name="Docker">
+      <deployment type="docker-compose.yml">
+        <settings>
+          <option name="sourceFilePath" value="docker-compose.yaml" />
+        </settings>
+      </deployment>
+      <method v="2" />
+    </configuration>
+    <configuration name="docker-compose.yaml.mysql: Compose Deployment" type="docker-deploy" factoryName="docker-compose.yml" temporary="true" server-name="Docker">
+      <deployment type="docker-compose.yml">
+        <settings>
+          <option name="services">
+            <list>
+              <option value="mysql" />
+            </list>
+          </option>
+          <option name="sourceFilePath" value="docker-compose.yaml" />
+        </settings>
+      </deployment>
+      <method v="2" />
+    </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.MatchingServiceApplication" />
         <item itemvalue="Application.RideServiceApplication" />
+        <item itemvalue="Application.MatchingServiceApplication" />
         <item itemvalue="Application.LocationServiceApplication" />
+        <item itemvalue="Docker.docker-compose.yaml.mysql: Compose Deployment" />
+        <item itemvalue="Docker.docker-compose.yaml: Compose Deployment" />
       </list>
     </recent_temporary>
   </component>

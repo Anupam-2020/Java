@@ -13,20 +13,20 @@ public class RideRequest {
     @NotBlank(message = "Rider Id is required")
     private String riderId;
 
-    @NotBlank(message = "PickUp latitude is required")
+//    @NotBlank(message = "PickUp latitude is required")
     private double pickupLatitude;
 
-    @NotBlank(message = "PickUp longitude is required")
+//    @NotBlank(message = "PickUp longitude is required")
     private double pickupLongitude;
 
     @NotBlank(message = "PickUp address is required")
     private String pickUpAddress;
 
-    @NotBlank(message = "Drop latitude is required")
+//    @NotBlank(message = "Drop latitude is required")
     private double dropLatitude;
 
 
-    @NotBlank(message = "Drop longitude is required")
+//    @NotBlank(message = "Drop longitude is required")
     private double dropLongitude;
 
 

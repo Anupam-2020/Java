@@ -38,9 +38,13 @@ public class RideService {
         ride.setPickupLongitude(rideRequest.getPickupLongitude());
         ride.setDropLatitude(rideRequest.getDropLatitude());
         ride.setDropLongitude(rideRequest.getDropLongitude());
+        ride.setPickUpAddress(rideRequest.getPickUpAddress());
         ride.setDropAddress(rideRequest.getDropAddress());
         ride.setStatus(RideStatus.REQUESTED);
         ride.setEstimatedFare(calculateEstimateFare(rideRequest));
+
+        log.info("Pickup address from request: {}", rideRequest.getPickUpAddress());
+        log.info("Pickup address in entity: {}", ride.getPickUpAddress());
 
         Ride savedride = rideRepository.save(ride);
 
@@ -51,7 +55,7 @@ public class RideService {
                 savedride.getRiderId(),
                 savedride.getPickupLatitude(),
                 savedride.getPickupLongitude(),
-                savedride.getPickupAddress(),
+                savedride.getPickUpAddress(),
                 savedride.getDropLatitude(),
                 savedride.getDropLongitude(),
                 savedride.getDropAddress()
@@ -61,7 +65,7 @@ public class RideService {
 
         log.info("RideRequestedEvent published to kafka for ride: {}", savedride.getId());
 
-        // Update status to Matching
+//         Update status to Matching
         savedride.setStatus(RideStatus.MATCHING);
         rideRepository.save(savedride);
 
@@ -89,7 +93,7 @@ public class RideService {
         return Math.round(fare * 100.0) / 100.0;
     }
 
-    private void updateRideWithDriver(String rideId, String driverId) {
+    public void updateRideWithDriver(String rideId, String driverId) {
         Ride ride = rideRepository.findById(rideId)
                 .orElseThrow(() -> new RuntimeException("Ride not found"));
 
@@ -146,7 +150,7 @@ public class RideService {
         response.setDriverId(savedride.getDriverId());
         response.setPickupLatitude(savedride.getPickupLatitude());
         response.setPickupLongitude(savedride.getPickupLongitude());
-        response.setPickupAddress(savedride.getPickupAddress());
+        response.setPickupAddress(savedride.getPickUpAddress());
         response.setDropLatitude(savedride.getDropLatitude());
         response.setDropLongitude(savedride.getDropLongitude());
         response.setDropAddress(savedride.getDropAddress());
