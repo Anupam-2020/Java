@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/Adapter Design Pattern/Adapter Design Pattern.iml" filepath="$PROJECT_DIR$/Adapter Design Pattern/Adapter Design Pattern.iml" />
+      <module fileurl="file://$PROJECT_DIR$/BuilderDesignPattern/BuilderDesignPattern.iml" filepath="$PROJECT_DIR$/BuilderDesignPattern/BuilderDesignPattern.iml" />
+      <module fileurl="file://$PROJECT_DIR$/DecoratorPattern/DecoratorPattern.iml" filepath="$PROJECT_DIR$/DecoratorPattern/DecoratorPattern.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Facade Design Pattern/Facade Design Pattern.iml" filepath="$PROJECT_DIR$/Facade Design Pattern/Facade Design Pattern.iml" />
+      <module fileurl="file://$PROJECT_DIR$/FactoryDesignPattern/FactoryDesignPattern.iml" filepath="$PROJECT_DIR$/FactoryDesignPattern/FactoryDesignPattern.iml" />
+      <module fileurl="file://$PROJECT_DIR$/HashMaplmplementation/HashMaplmplementation.iml" filepath="$PROJECT_DIR$/HashMaplmplementation/HashMaplmplementation.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Iterator Design Pattern/Iterator Design Pattern.iml" filepath="$PROJECT_DIR$/Iterator Design Pattern/Iterator Design Pattern.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/LLD.iml" filepath="$PROJECT_DIR$/.idea/LLD.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ObserverDesignPattern/ObserverDesignPattern.iml" filepath="$PROJECT_DIR$/ObserverDesignPattern/ObserverDesignPattern.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Parking Lot LLD/Parking Lot LLD.iml" filepath="$PROJECT_DIR$/Parking Lot LLD/Parking Lot LLD.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Practice/Practice.iml" filepath="$PROJECT_DIR$/Practice/Practice.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ProxyDesignPattern/ProxyDesignPattern.iml" filepath="$PROJECT_DIR$/ProxyDesignPattern/ProxyDesignPattern.iml" />
+      <module fileurl="file://$PROJECT_DIR$/SOLID/SOLID.iml" filepath="$PROJECT_DIR$/SOLID/SOLID.iml" />
+      <module fileurl="file://$PROJECT_DIR$/SingletonDesignPattern/SingletonDesignPattern.iml" filepath="$PROJECT_DIR$/SingletonDesignPattern/SingletonDesignPattern.iml" />
+      <module fileurl="file://$PROJECT_DIR$/strategyDesignPattern/strategyDesignPattern.iml" filepath="$PROJECT_DIR$/strategyDesignPattern/strategyDesignPattern.iml" />
+    </modules>
+  </component>
+</project>
