@@ -5,43 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0f287a9c-398b-458c-bdf1-c091155ee68a" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/../../Coding Shuttle/hospitalManagementSystem" beforeDir="false" afterPath="$PROJECT_DIR$/../../Coding Shuttle/hospitalManagementSystem" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../LLD/FactoryDesignPattern/FactoryDesignPattern.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../../LLD/FactoryDesignPattern/FactoryDesignPattern.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Module14/learnKafka/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Module14/learnKafka/.idea/compiler.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Module14/learnKafka/.idea/copilot.data.migration.agent.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Module14/learnKafka/.idea/copilot.data.migration.ask.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Module14/learnKafka/.idea/copilot.data.migration.ask2agent.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Module14/learnKafka/.idea/copilot.data.migration.edit.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Module14/learnKafka/.idea/encodings.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Module14/learnKafka/.idea/jarRepositories.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Module14/learnKafka/.idea/jpa-buddy.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Module14/learnKafka/.idea/learnKafka.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Module14/learnKafka/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Module14/learnKafka/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Module14/learnKafka/.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Module14/learnKafka/notification-service/.gitattributes" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Module14/learnKafka/notification-service/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Module14/learnKafka/notification-service/.mvn/wrapper/maven-wrapper.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Module14/learnKafka/notification-service/mvnw" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Module14/learnKafka/notification-service/mvnw.cmd" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Module14/learnKafka/notification-service/pom.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Module14/learnKafka/notification-service/src/main/java/com/anupam/learnKafka/notification_service/NotificationServiceApplication.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Module14/learnKafka/notification-service/src/main/java/com/anupam/learnKafka/notification_service/consumer/UserKafkaConsumer.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Module14/learnKafka/notification-service/src/main/resources/application.yaml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Module14/learnKafka/notification-service/src/test/java/com/anupam/learnKafka/notification_service/NotificationServiceApplicationTests.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Module14/learnKafka/user-service/.gitattributes" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Module14/learnKafka/user-service/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Module14/learnKafka/user-service/.mvn/wrapper/maven-wrapper.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Module14/learnKafka/user-service/mvnw" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Module14/learnKafka/user-service/mvnw.cmd" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Module14/learnKafka/user-service/pom.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Module14/learnKafka/user-service/src/main/java/com/anupam/learnKafka/user_service/UserServiceApplication.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Module14/learnKafka/user-service/src/main/java/com/anupam/learnKafka/user_service/config/KafkaTopicConfig.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Module14/learnKafka/user-service/src/main/java/com/anupam/learnKafka/user_service/controller/UserController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Module14/learnKafka/user-service/src/main/resources/application.yaml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Module14/learnKafka/user-service/src/test/java/com/anupam/learnKafka/user_service/UserServiceApplicationTests.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Coding Shuttle/Module14/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../Coding Shuttle/Module14/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Java Core/Collections/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../Java Core/Collections/src/Main.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
