@@ -1,11 +1,17 @@
 package com.anupam.razorpay.merchant.entity;
 
 import jakarta.persistence.*;
+import lombok.*;
 
 import java.util.UUID;
 
 @Entity
 @Table(name = "merchant_webhook_config")
+@Getter
+@Setter
+@AllArgsConstructor
+@NoArgsConstructor
+@Builder
 public class MerchantWebhookConfig { // Webhook is used here to notify the merchant about the payment status and other events related to the payment done via Razorpay.
     // The merchant can configure the webhook URL where they want to receive the notifications.
 
