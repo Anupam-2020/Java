@@ -1,34 +1,43 @@
 package com.anupam.razorpay.merchant.services.impl;
 
 import com.anupam.razorpay.common.exception.ResourceNotFoundException;
+import com.anupam.razorpay.common.util.RandomizerUtil;
 import com.anupam.razorpay.merchant.dto.request.CreateApiKeyRequest;
 import com.anupam.razorpay.merchant.dto.response.ApiKeyCreateResponse;
+import com.anupam.razorpay.merchant.dto.response.ApiKeyResponse;
 import com.anupam.razorpay.merchant.entity.ApiKey;
 import com.anupam.razorpay.merchant.entity.Merchant;
 import com.anupam.razorpay.merchant.repository.ApiKeyRepository;
 import com.anupam.razorpay.merchant.repository.MerchantRepository;
 import com.anupam.razorpay.merchant.services.ApiKeyService;
+import jakarta.annotation.Nullable;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
 
+import java.time.LocalDateTime;
+import java.util.List;
 import java.util.UUID;
+import java.util.stream.Collectors;
 
 @Service
 @RequiredArgsConstructor
 @Slf4j
+@Transactional(readOnly = true)
 public class ApiKeyServiceImpl implements ApiKeyService {
 
     private final MerchantRepository merchantRepository;
     private final ApiKeyRepository apiKeyRepository;
 
     @Override
+    @Transactional
     public ApiKeyCreateResponse create(UUID merchantId, CreateApiKeyRequest request) {
         Merchant merchant = merchantRepository.findById(merchantId)
                 .orElseThrow(() -> new ResourceNotFoundException("merchant", merchantId));
 
-        String keyId = "rzp" + request.environment().name().toUpperCase()+"big_random_string";
-        String rawSecret = "big_random_secret"; // TODO: replace with cryptography.
+        String keyId = "rzp_" + request.environment().name().toLowerCase()+"_"+RandomizerUtil.randomBase64(24);
+        String rawSecret = RandomizerUtil.randomBase64(40);
 
         ApiKey apiKey = ApiKey.builder()
                 .merchant(merchant)
@@ -40,5 +49,51 @@ public class ApiKeyServiceImpl implements ApiKeyService {
         apiKey = apiKeyRepository.save(apiKey);
 
         return new ApiKeyCreateResponse(apiKey.getId(), keyId, rawSecret, request.environment());
+    }
+
+    @Override
+    public List<ApiKeyResponse> listByMerchant(UUID merchantId) {
+        return apiKeyRepository.findByMerchant_Id(merchantId).stream()
+                .map(apiKey -> ApiKeyResponse.builder()
+                        .enabled(apiKey.isEnabled())
+                        .environment(apiKey.getEnvironment())
+                        .id(apiKey.getId())
+                        .keyId(apiKey.getKeyId())
+                        .lastUsedAt(apiKey.getLastUsedAt())
+                        .build()
+                ).collect(Collectors.toList());
+    }
+
+    @Override
+    @Transactional
+    public void revoke(UUID merchantId, UUID keyId) {
+        ApiKey apiKey = apiKeyRepository.findById(keyId)
+                .filter(k -> k.getMerchant().getId().equals(merchantId))
+                .orElseThrow(() -> new ResourceNotFoundException("ApiKey", keyId));
+
+        apiKey.setEnabled(false);
+//        apiKeyRepository.save(apiKey);
+    }
+
+    @Override
+    @Transactional
+    public @Nullable ApiKeyCreateResponse rotate(UUID merchantId, UUID keyId) {
+        ApiKey apiKey = apiKeyRepository.findById(keyId)
+                .filter(k -> k.getMerchant().getId().equals(merchantId))
+                .orElseThrow(() -> new ResourceNotFoundException("ApiKey", keyId));
+
+        String newRawSecret = RandomizerUtil.randomBase64(40);
+        apiKey.setPreviousKeySecretHash(apiKey.getKeySecretHash());
+        apiKey.setKeySecretHash(newRawSecret); // TODO: encode with BcryptPasswordEncoder
+        apiKey.setRotatedAt(LocalDateTime.now());
+        apiKey.setGracePeriodExpiresAt(LocalDateTime.now().plusHours(24));
+        apiKey = apiKeyRepository.save(apiKey);
+
+        return ApiKeyCreateResponse.builder()
+                .id(apiKey.getId())
+                .keyId(apiKey.getKeyId())
+                .keySecret(newRawSecret)
+                .environment(apiKey.getEnvironment())
+                .build();
     }
 }

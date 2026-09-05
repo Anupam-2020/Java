@@ -2,16 +2,15 @@ package com.anupam.razorpay.merchant.controller;
 
 import com.anupam.razorpay.merchant.dto.request.CreateApiKeyRequest;
 import com.anupam.razorpay.merchant.dto.response.ApiKeyCreateResponse;
+import com.anupam.razorpay.merchant.dto.response.ApiKeyResponse;
 import com.anupam.razorpay.merchant.services.ApiKeyService;
 import jakarta.validation.Valid;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
-import org.springframework.web.bind.annotation.PathVariable;
-import org.springframework.web.bind.annotation.RequestBody;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
+import java.util.List;
 import java.util.UUID;
 
 @RestController
@@ -21,9 +20,26 @@ public class ApiKeyController {
 
     private final ApiKeyService apiKeyService;
 
-    public ResponseEntity<ApiKeyCreateResponse> create(@PathVariable UUID merchantId,
+    @PostMapping
+    public ResponseEntity<ApiKeyCreateResponse> create(@PathVariable(name = "merchantId") UUID merchantId,
                                                        @Valid @RequestBody CreateApiKeyRequest request) {
                 return ResponseEntity.status(HttpStatus.CREATED)
                         .body(apiKeyService.create(merchantId, request));
+    }
+
+    @GetMapping
+    public ResponseEntity<List<ApiKeyResponse>> list(@PathVariable UUID merchantId) {
+        return ResponseEntity.ok(apiKeyService.listByMerchant(merchantId));
+    }
+
+    @DeleteMapping("/{keyId}")
+    public ResponseEntity<Void> revoke(@PathVariable(name = "merchantId") UUID merchantId, @PathVariable(name = "keyId") UUID keyId) {
+        apiKeyService.revoke(merchantId, keyId);
+        return ResponseEntity.noContent().build();
+    }
+
+    @PostMapping("/{keyId}/rotate")
+    public ResponseEntity<ApiKeyCreateResponse> rotateKey(@PathVariable UUID merchantId, @PathVariable UUID keyId) {
+        return ResponseEntity.ok(apiKeyService.rotate(merchantId, keyId));
     }
 }

@@ -3,6 +3,7 @@ package com.anupam.razorpay.payment.entity;
 import com.anupam.razorpay.common.entity.Money;
 import com.anupam.razorpay.common.enums.OrderStatus;
 import jakarta.persistence.*;
+import lombok.*;
 import org.hibernate.annotations.JdbcTypeCode;
 import org.hibernate.type.SqlTypes;
 
@@ -13,6 +14,11 @@ import java.util.UUID;
 
 @Entity
 @Table(name = "order_record")
+@Builder
+@Getter
+@Setter
+@AllArgsConstructor
+@NoArgsConstructor
 public class OrderRecord {
 
     @Id
@@ -26,11 +32,15 @@ public class OrderRecord {
     @Embedded
     private Money amount;
 
+    @Column(length = 100)
+    private String receipt;
+
     @Enumerated(EnumType.STRING)
     @Column(nullable = false, length = 20)
     private OrderStatus orderStatus = OrderStatus.CREATED;
 
     @Column(nullable = false)
+    @Builder.Default
     private Integer attempts = 0;
 
     @JdbcTypeCode((SqlTypes.JSON)) // This annotation is used to specify that the field should be stored as a JSONB type in the database.
